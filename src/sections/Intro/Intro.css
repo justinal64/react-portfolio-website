@@ -1,0 +1,12 @@
+.intro {
+    background: #2ec0f9;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#2ec0f9, #c4e0f9);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#2ec0f9, #c4e0f9);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#2ec0f9, #c4e0f9);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#2ec0f9, #c4e0f9);
+    /* Standard syntax */
+}
