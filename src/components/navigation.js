@@ -11,33 +11,33 @@ export default class Navigation extends Component {
 
     return (
       <div>
-        <Menu pointing secondary>
+        <Menu pointing secondary fluid widths={6}>
           <Menu.Item
-            name="home"
+            name="Intro"
             active={activeItem === "home"}
             onClick={this.handleItemClick}
           />
           <Menu.Item
-            name="messages"
+            name="Projects"
             active={activeItem === "messages"}
             onClick={this.handleItemClick}
           />
           <Menu.Item
-            name="friends"
+            name="Contact"
             active={activeItem === "friends"}
             onClick={this.handleItemClick}
           />
-          <Menu.Menu position="right">
+          {/* <Menu.Menu position="right">
             <Menu.Item
               name="logout"
               active={activeItem === "logout"}
               onClick={this.handleItemClick}
             />
-          </Menu.Menu>
+          </Menu.Menu> */}
         </Menu>
 
         {/* <Segment>
-          <img src="/assets/images/wireframe/media-paragraph.png" />
+          <img src={require("../static/img/test.png")} />
         </Segment> */}
       </div>
     );
