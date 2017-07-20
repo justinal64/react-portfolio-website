@@ -1,6 +1,7 @@
 import React from "react";
 import { render } from "react-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./base.css";
 import "semantic-ui-css/semantic.min.css";
 import Navigation from "./components/Navigation/navigation";
 import Contact from "./sections/Contact/Contact";

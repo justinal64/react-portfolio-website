@@ -5,7 +5,7 @@ import Contact from "../../sections/Contact/Contact";
 import Projects from "../../sections/Projects/Projects";
 import Intro from "../../sections/Intro/Intro";
 import NotFound from "../../sections/NotFound/NotFound";
-
+import "./navigation.css";
 export default class Navigation extends Component {
   state = {};
 
