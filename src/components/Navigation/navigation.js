@@ -18,7 +18,7 @@ export default class Navigation extends Component {
   render() {
     const { activeItem } = this.state;
     return (
-      <Menu fluid widths={7}>
+      <Menu fluid widths={7} size="massive" secondary>
         <Menu.Item name="Intro" active={activeItem === "Intro"}>
           <Link to="/">Intro</Link>
         </Menu.Item>
