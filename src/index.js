@@ -1,12 +1,12 @@
 import React from "react";
 import { render } from "react-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Navigation from "./components/navigation";
+import "semantic-ui-css/semantic.min.css";
+import Navigation from "./components/Navigation/navigation";
 import Contact from "./sections/Contact/Contact";
 import Projects from "./sections/Projects/Projects";
 import Intro from "./sections/Intro/Intro";
 import NotFound from "./sections/NotFound/NotFound";
-// import "./css/style.css";
 
 render(
   <Router>
