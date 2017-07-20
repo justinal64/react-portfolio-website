@@ -1,20 +1,16 @@
 import React from "react";
-import "./base.css"; // eslint-disable-line import/no-unassigned-import
-import "semantic-ui-css/semantic.min.css";
-import Intro from "./sections/Intro/Intro";
-import Projects from "./sections/Projects/Projects";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Contact from "./sections/Contact/Contact";
-import Navigation from "./components/navigation";
+import Projects from "./sections/Projects/Projects";
+import Intro from "./sections/Intro/Intro";
 
-const App = () => {
-  return (
+const App = () =>
+  <Router>
     <div>
-      <Navigation />
-      <Intro />
-      <Projects />
-      <Contact />
+      <Route exact path="/" component={Intro} />
+      <Route path="/contact" component={Contact} />
+      <Route path="/projects" component={Projects} />
     </div>
-  );
-};
+  </Router>;
 
 export default App;
