@@ -6,7 +6,7 @@ import "./navigation.css";
 export default class Navigation extends Component {
   render() {
     return (
-      <Menu fluid size="massive" secondary>
+      <Menu fluid size="massive" secondary className="nav">
         <Menu.Menu position="left">
           <Menu.Item name="Home">
             <Link to="/">JL Designs</Link>
@@ -15,11 +15,11 @@ export default class Navigation extends Component {
         <Menu.Item name="Home">
           <Link to="/">Home</Link>
         </Menu.Item>
-        <Menu.Item name="Contact">
-          <Link to="/contact">Contact</Link>
-        </Menu.Item>
         <Menu.Item name="Projects">
           <Link to="/projects">Projects</Link>
+        </Menu.Item>
+        <Menu.Item name="Contact">
+          <Link to="/contact">Contact</Link>
         </Menu.Item>
       </Menu>
     );
