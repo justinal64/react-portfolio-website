@@ -19,6 +19,8 @@
 .home {
     text-align: center;
     color: #fff;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .ui.header {
