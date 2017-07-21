@@ -16,7 +16,10 @@ body {
     /* Standard syntax */
 }
 
-.intro,
+
+/* each div takes up the entire page */
+
+.home,
 .contact,
 .projects {
     /* Height and width fallback for older browsers. */
