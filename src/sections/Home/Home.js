@@ -7,12 +7,11 @@ const Home = () => {
     <div className="home">
       <Typist>
         <span className="h1">
-          Hi my name is Justin Leggett and I am a full stack software developer
-          from Nashville Tennessee. I recently graduated from Nashville Software
-          School and now I am looking for my first full time gig in software
-          development. When I'm not creating super cool websites like this, you
-          will find me hanging out with my wife and playing with our children.
-          Thank you so much for visiting and have a great day.
+          Hi my name is Justin and I like to make cool websites...<br />
+        </span>
+        <span className="h1">
+          If you would like to see more of my work please click the projects
+          tab...
         </span>
       </Typist>
     </div>

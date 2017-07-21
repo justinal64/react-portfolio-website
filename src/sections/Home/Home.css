@@ -56,6 +56,7 @@
 .Typist .Cursor--blinking {
     opacity: 1;
     animation: blink 1s linear infinite;
+    font-size: 1.5em;
 }
 
 @keyframes blink {
