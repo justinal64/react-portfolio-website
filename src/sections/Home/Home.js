@@ -6,16 +6,10 @@ const Home = () => {
   return (
     <div className="home">
       <Typist>
-        <Header as="h1" textAlign="center">
-          Welcome To My Portfolio Website
-        </Header>
+        <span className="h1">
+          Welcome To My <br />Portfolio Website
+        </span>
       </Typist>
-      {/* <Header as="h2" textAlign="center" className="headerR">
-        To My
-      </Header>
-      <Header as="h1" textAlign="center" className="headerR">
-        Portfolio Website
-      </Header> */}
     </div>
   );
 };

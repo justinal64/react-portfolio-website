@@ -16,6 +16,11 @@
     }
 }
 
+.home {
+    text-align: center;
+    color: #fff;
+}
+
 .ui.header {
     color: white;
 }
@@ -32,4 +37,33 @@
     animation: 1.2s ease-out 0s 1 slideInFromRight;
     color: #fff;
     padding: 30px;
+}
+
+.h1 {
+    font-size: 2.25em;
+    line-height: 1em;
+}
+
+
+/* blinking cursor */
+
+.Typist .Cursor {
+    display: inline-block;
+}
+
+.Typist .Cursor--blinking {
+    opacity: 1;
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
