@@ -15,8 +15,7 @@ body {
 /* each div takes up the entire page */
 
 .home,
-.contact,
-.projects {
+.contact {
     /* Height and width fallback for older browsers. */
     height: 100%;
     width: 100%;
