@@ -45,7 +45,12 @@ const Projects = () => {
                 className="image"
               />
               <div className="middle">
-                <div className="text">Jane Doe</div>
+                <div className="text">
+                  This project was created using Angular 1x, Bootstrap, HTML,
+                  and CSS3. This project was created using Angular 1x,
+                  Bootstrap, HTML, and CSS3. This project was created using
+                  Angular 1x, Bootstrap, HTML, and CSS3.
+                </div>
               </div>
             </div>
           </Grid.Column>
