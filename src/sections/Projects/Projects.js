@@ -1,5 +1,15 @@
 import React from "react";
-import { Grid, Image, Segment, Card, Reveal, Header } from "semantic-ui-react";
+import {
+  Grid,
+  Image,
+  Segment,
+  Card,
+  Reveal,
+  Header,
+  Modal,
+  Icon,
+  Button
+} from "semantic-ui-react";
 import "./Projects.css";
 
 // Websites to look at for tech stack
@@ -9,8 +19,51 @@ import "./Projects.css";
 const Projects = () => {
   return (
     <div className="projects">
-      <h1>Projects page</h1>
+      <h1>Front End Projects</h1>
+      <Header>Tech Stack</Header>
+      <div>JS, React, AngularJS, Bootstrap</div>
       <Grid stackable centered columns={3}>
+        <Grid.Row columns={3}>
+          <Grid.Column>
+            <Modal
+              trigger={
+                <div>
+                  <Header>TheBibleApp</Header>
+                  <Image src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg" />
+                </div>
+              }
+            >
+              <Modal.Header>Profile Picture</Modal.Header>
+              <Modal.Content image scrolling>
+                <Image
+                  size="medium"
+                  src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg"
+                  wrapped
+                />
+
+                <Modal.Description>
+                  <Header>Modal Header</Header>
+                  <p>
+                    This is an example of expanded content that will cause the
+                    modal's dimmer to scroll
+                  </p>
+                </Modal.Description>
+              </Modal.Content>
+              <Modal.Actions>
+                <Button primary>
+                  Proceed <Icon name="right chevron" />
+                </Button>
+              </Modal.Actions>
+            </Modal>
+          </Grid.Column>
+          <Grid.Column>
+            <Image src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg" />
+          </Grid.Column>
+          <Grid.Column>
+            <Image src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg" />
+          </Grid.Column>
+        </Grid.Row>
+        <h1>Back End Projects</h1>
         <Grid.Row columns={3}>
           <Grid.Column>
             <Image src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg" />
@@ -22,36 +75,16 @@ const Projects = () => {
             <Image src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg" />
           </Grid.Column>
         </Grid.Row>
+        <h1>OSS Projects</h1>
         <Grid.Row columns={3}>
           <Grid.Column>
-            <Reveal animated="move">
-              <Reveal.Content visible>
-                <Image src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg" />
-              </Reveal.Content>
-              <Reveal.Content hidden>
-                <Image src="http://p8cdn4static.sharpschool.com/UserFiles/Servers/Server_52793/Image/Directory/Class%20Pages/Technology/tech.jpg" />
-              </Reveal.Content>
-            </Reveal>
+            <Image src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg" />
           </Grid.Column>
           <Grid.Column>
-            <Reveal animated="move">
-              <Reveal.Content visible>
-                <Image src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg" />
-              </Reveal.Content>
-              <Reveal.Content hidden>
-                <Image src="http://p8cdn4static.sharpschool.com/UserFiles/Servers/Server_52793/Image/Directory/Class%20Pages/Technology/tech.jpg" />
-              </Reveal.Content>
-            </Reveal>
+            <Image src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg" />
           </Grid.Column>
           <Grid.Column>
-            <Reveal animated="move">
-              <Reveal.Content visible>
-                <Image src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg" />
-              </Reveal.Content>
-              <Reveal.Content hidden>
-                <Image src="http://p8cdn4static.sharpschool.com/UserFiles/Servers/Server_52793/Image/Directory/Class%20Pages/Technology/tech.jpg" />
-              </Reveal.Content>
-            </Reveal>
+            <Image src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg" />
           </Grid.Column>
         </Grid.Row>
       </Grid>
