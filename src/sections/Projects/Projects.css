@@ -29,11 +29,11 @@
     -ms-transform: translate(-50%, -50%);
 }
 
-.image:hover .image {
+.overlay:hover .image {
     opacity: 0.3;
 }
 
-.image:hover .middle {
+.overlay:hover .middle {
     opacity: 1;
 }
 

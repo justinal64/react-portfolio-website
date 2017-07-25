@@ -6,7 +6,6 @@ import {
   Card,
   Reveal,
   Header,
-  Modal,
   Icon,
   Button
 } from "semantic-ui-react";
@@ -25,7 +24,7 @@ const Projects = () => {
       <Grid stackable centered columns={3}>
         <Grid.Row columns={3}>
           <Grid.Column>
-            <div className="image">
+            <div className="overlay">
               <Header>TheBibleApp</Header>
               <Image
                 src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg"
@@ -38,7 +37,7 @@ const Projects = () => {
             </div>
           </Grid.Column>
           <Grid.Column>
-            <div className="image">
+            <div className="overlay">
               <Header>TheBibleApp</Header>
               <Image
                 src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg"
@@ -51,7 +50,7 @@ const Projects = () => {
             </div>
           </Grid.Column>
           <Grid.Column>
-            <div className="image">
+            <div className="overlay">
               <Header>TheBibleApp</Header>
               <Image
                 src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg"
