@@ -25,42 +25,43 @@ const Projects = () => {
       <Grid stackable centered columns={3}>
         <Grid.Row columns={3}>
           <Grid.Column>
-            <Modal
-              trigger={
-                <div>
-                  <Header>TheBibleApp</Header>
-                  <Image src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg" />
-                </div>
-              }
-            >
-              <Modal.Header>Profile Picture</Modal.Header>
-              <Modal.Content image scrolling>
-                <Image
-                  size="medium"
-                  src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg"
-                  wrapped
-                />
-
-                <Modal.Description>
-                  <Header>Modal Header</Header>
-                  <p>
-                    This is an example of expanded content that will cause the
-                    modal's dimmer to scroll
-                  </p>
-                </Modal.Description>
-              </Modal.Content>
-              <Modal.Actions>
-                <Button primary>
-                  Proceed <Icon name="right chevron" />
-                </Button>
-              </Modal.Actions>
-            </Modal>
+            <div className="image">
+              <Header>TheBibleApp</Header>
+              <Image
+                src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg"
+                alt="Avatar"
+                className="image"
+              />
+              <div className="middle">
+                <div className="text">John Doe</div>
+              </div>
+            </div>
           </Grid.Column>
           <Grid.Column>
-            <Image src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg" />
+            <div className="image">
+              <Header>TheBibleApp</Header>
+              <Image
+                src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg"
+                alt="Avatar"
+                className="image"
+              />
+              <div className="middle">
+                <div className="text">Jane Doe</div>
+              </div>
+            </div>
           </Grid.Column>
           <Grid.Column>
-            <Image src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg" />
+            <div className="image">
+              <Header>TheBibleApp</Header>
+              <Image
+                src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg"
+                alt="Avatar"
+                className="image"
+              />
+              <div className="middle">
+                <div className="text">Joanne Doe</div>
+              </div>
+            </div>
           </Grid.Column>
         </Grid.Row>
         <h1>Back End Projects</h1>
