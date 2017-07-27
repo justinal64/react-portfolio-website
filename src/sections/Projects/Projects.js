@@ -10,7 +10,7 @@ import {
   Button
 } from "semantic-ui-react";
 import "./Projects.css";
-
+import TheBibleApp from "../../static/img/projects/TheBibleApp_Homescreen.png";
 // Websites to look at for tech stack
 // http://cihadturhan.com/
 // http://robin-noguier.com/
@@ -26,11 +26,7 @@ const Projects = () => {
           <Grid.Column>
             <div className="overlay">
               <Header>TheBibleApp</Header>
-              <Image
-                src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg"
-                alt="Avatar"
-                className="image"
-              />
+              <Image src={TheBibleApp} alt="TheBibleApp" className="image" />
               <div className="middle">
                 <div className="text">John Doe</div>
               </div>
@@ -80,7 +76,7 @@ const Projects = () => {
             <Image src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg" />
           </Grid.Column>
         </Grid.Row>
-        <h1>OSS Projects</h1>
+        <h1>Fun Projects</h1>
         <Grid.Row columns={3}>
           <Grid.Column>
             <Image src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg" />
