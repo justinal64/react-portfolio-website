@@ -19,76 +19,206 @@ const Projects = () => {
   return (
     <div className="projects">
       <h1>Front End Projects</h1>
-      <Header>Tech Stack</Header>
+      <Header>Front End Tech Stack</Header>
       <div>JS, React, AngularJS, Bootstrap</div>
-      <Grid stackable centered columns={3}>
-        <Grid.Row columns={3}>
-          <Grid.Column>
-            <div className="overlay">
-              <Header>TheBibleApp</Header>
-              <Image src={TheBibleApp} alt="TheBibleApp" className="image" />
-              <div className="middle">
-                <div className="text">John Doe</div>
-              </div>
-            </div>
-          </Grid.Column>
-          <Grid.Column>
-            <div className="overlay">
-              <Header>TheBibleApp</Header>
-              <Image
-                src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg"
-                alt="Avatar"
-                className="image"
-              />
-              <div className="middle">
-                <div className="text">
-                  This project was created using Angular 1x, Bootstrap, HTML,
-                  and CSS3. This project was created using Angular 1x,
-                  Bootstrap, HTML, and CSS3. This project was created using
-                  Angular 1x, Bootstrap, HTML, and CSS3.
-                </div>
-              </div>
-            </div>
-          </Grid.Column>
-          <Grid.Column>
-            <div className="overlay">
-              <Header>TheBibleApp</Header>
-              <Image
-                src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg"
-                alt="Avatar"
-                className="image"
-              />
-              <div className="middle">
-                <div className="text">Joanne Doe</div>
-              </div>
-            </div>
-          </Grid.Column>
-        </Grid.Row>
-        <h1>Back End Projects</h1>
-        <Grid.Row columns={3}>
-          <Grid.Column>
-            <Image src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg" />
-          </Grid.Column>
-          <Grid.Column>
-            <Image src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg" />
-          </Grid.Column>
-          <Grid.Column>
-            <Image src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg" />
-          </Grid.Column>
-        </Grid.Row>
-        <h1>Fun Projects</h1>
-        <Grid.Row columns={3}>
-          <Grid.Column>
-            <Image src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg" />
-          </Grid.Column>
-          <Grid.Column>
-            <Image src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg" />
-          </Grid.Column>
-          <Grid.Column>
-            <Image src="https://www.budsies.com/blog/wp-content/uploads/2016/09/TechTransfer.jpg" />
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
+      <Card.Group stackable itemsPerRow={3}>
+        <Card>
+          <div className="image">
+            <Image src={TheBibleApp} />
+          </div>
+          <Card.Content>
+            <Card.Header>TheBibleApp</Card.Header>
+            <Card.Meta>Created December 2016</Card.Meta>
+            <Card.Description>
+              TheBibleApp is a web based Bible reading website. Written in
+              Angular 1.x, using Material Design for styling , and Firebase for
+              storing data.
+            </Card.Description>
+          </Card.Content>
+          <Card.Content extra>
+            <a>
+              <Icon name="user" />
+              10 Friends
+            </a>
+          </Card.Content>
+        </Card>
+        <Card>
+          <Image src="https://thumbs.dreamstime.com/z/technology-hands-38213409.jpg" />
+          <Card.Content>
+            <Card.Header>Daniel</Card.Header>
+            <Card.Meta>Joined in 2016</Card.Meta>
+            <Card.Description>
+              Daniel is a comedian living in Nashville.
+            </Card.Description>
+          </Card.Content>
+          <Card.Content extra>
+            <a>
+              <Icon name="user" />
+              10 Friends
+            </a>
+          </Card.Content>
+        </Card>
+        <Card>
+          <Image src="https://thumbs.dreamstime.com/z/technology-hands-38213409.jpg" />
+          <Card.Content>
+            <Card.Header>Daniel</Card.Header>
+            <Card.Meta>Joined in 2016</Card.Meta>
+            <Card.Description>
+              Daniel is a comedian living in Nashville.
+            </Card.Description>
+          </Card.Content>
+          <Card.Content extra>
+            <a>
+              <Icon name="user" />
+              10 Friends
+            </a>
+          </Card.Content>
+        </Card>
+        <Card>
+          <Image src="https://thumbs.dreamstime.com/z/technology-hands-38213409.jpg" />
+          <Card.Content>
+            <Card.Header>Daniel</Card.Header>
+            <Card.Meta>Joined in 2016</Card.Meta>
+            <Card.Description>
+              Daniel is a comedian living in Nashville.
+            </Card.Description>
+          </Card.Content>
+          <Card.Content extra>
+            <a>
+              <Icon name="user" />
+              10 Friends
+            </a>
+          </Card.Content>
+        </Card>
+        <Card>
+          <Image src="https://thumbs.dreamstime.com/z/technology-hands-38213409.jpg" />
+          <Card.Content>
+            <Card.Header>Daniel</Card.Header>
+            <Card.Meta>Joined in 2016</Card.Meta>
+            <Card.Description>
+              Daniel is a comedian living in Nashville.
+            </Card.Description>
+          </Card.Content>
+          <Card.Content extra>
+            <a>
+              <Icon name="user" />
+              10 Friends
+            </a>
+          </Card.Content>
+        </Card>
+        <Card>
+          <Image src="https://thumbs.dreamstime.com/z/technology-hands-38213409.jpg" />
+          <Card.Content>
+            <Card.Header>Daniel</Card.Header>
+            <Card.Meta>Joined in 2016</Card.Meta>
+            <Card.Description>
+              Daniel is a comedian living in Nashville.
+            </Card.Description>
+          </Card.Content>
+          <Card.Content extra>
+            <a>
+              <Icon name="user" />
+              10 Friends
+            </a>
+          </Card.Content>
+        </Card>
+        <Card>
+          <Image src="https://thumbs.dreamstime.com/z/technology-hands-38213409.jpg" />
+          <Card.Content>
+            <Card.Header>Daniel</Card.Header>
+            <Card.Meta>Joined in 2016</Card.Meta>
+            <Card.Description>
+              Daniel is a comedian living in Nashville.
+            </Card.Description>
+          </Card.Content>
+          <Card.Content extra>
+            <a>
+              <Icon name="user" />
+              10 Friends
+            </a>
+          </Card.Content>
+        </Card>
+        <Card>
+          <Image src="https://thumbs.dreamstime.com/z/technology-hands-38213409.jpg" />
+          <Card.Content>
+            <Card.Header>Daniel</Card.Header>
+            <Card.Meta>Joined in 2016</Card.Meta>
+            <Card.Description>
+              Daniel is a comedian living in Nashville.
+            </Card.Description>
+          </Card.Content>
+          <Card.Content extra>
+            <a>
+              <Icon name="user" />
+              10 Friends
+            </a>
+          </Card.Content>
+        </Card>
+        <Card>
+          <Image src="https://thumbs.dreamstime.com/z/technology-hands-38213409.jpg" />
+          <Card.Content>
+            <Card.Header>Daniel</Card.Header>
+            <Card.Meta>Joined in 2016</Card.Meta>
+            <Card.Description>
+              Daniel is a comedian living in Nashville.
+            </Card.Description>
+          </Card.Content>
+          <Card.Content extra>
+            <a>
+              <Icon name="user" />
+              10 Friends
+            </a>
+          </Card.Content>
+        </Card>
+        <Card>
+          <Image src="https://thumbs.dreamstime.com/z/technology-hands-38213409.jpg" />
+          <Card.Content>
+            <Card.Header>Daniel</Card.Header>
+            <Card.Meta>Joined in 2016</Card.Meta>
+            <Card.Description>
+              Daniel is a comedian living in Nashville.
+            </Card.Description>
+          </Card.Content>
+          <Card.Content extra>
+            <a>
+              <Icon name="user" />
+              10 Friends
+            </a>
+          </Card.Content>
+        </Card>
+        <Card>
+          <Image src="https://thumbs.dreamstime.com/z/technology-hands-38213409.jpg" />
+          <Card.Content>
+            <Card.Header>Daniel</Card.Header>
+            <Card.Meta>Joined in 2016</Card.Meta>
+            <Card.Description>
+              Daniel is a comedian living in Nashville.
+            </Card.Description>
+          </Card.Content>
+          <Card.Content extra>
+            <a>
+              <Icon name="user" />
+              10 Friends
+            </a>
+          </Card.Content>
+        </Card>
+        <Card>
+          <Image src="https://thumbs.dreamstime.com/z/technology-hands-38213409.jpg" />
+          <Card.Content>
+            <Card.Header>Daniel</Card.Header>
+            <Card.Meta>Joined in 2016</Card.Meta>
+            <Card.Description>
+              Daniel is a comedian living in Nashville.
+            </Card.Description>
+          </Card.Content>
+          <Card.Content extra>
+            <a>
+              <Icon name="user" />
+              10 Friends
+            </a>
+          </Card.Content>
+        </Card>
+      </Card.Group>
     </div>
   );
 };
