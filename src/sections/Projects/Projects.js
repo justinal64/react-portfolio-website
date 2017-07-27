@@ -48,7 +48,6 @@ const Projects = () => {
             </Segment>
           </Grid.Column>
         </Grid.Row>
-
         <Grid.Row>
           <Grid.Column>
             <Icon name="home" size="massive" />
