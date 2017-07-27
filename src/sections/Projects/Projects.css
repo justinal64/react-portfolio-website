@@ -1,45 +1,19 @@
 .projects {
-    color: #fff;
+    /* color: #fff; */
     text-align: center;
     margin: 0 auto;
+    width: 95%;
 }
-
-
-/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity */
-
-
-/* overlay effect  */
 
 .image {
-    opacity: 1;
+    height: 50%;
+    width: 100%;
+}
+
+.ui.card>.image>img,
+.ui.cards>.card>.image>img {
     display: block;
     width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-.overlay:hover .image {
-    opacity: 0.3;
-}
-
-.overlay:hover .middle {
-    opacity: 1;
-}
-
-.text {
-    /* background-color: grey; */
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
+    height: 100%;
+    border-radius: inherit;
 }
