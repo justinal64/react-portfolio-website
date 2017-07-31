@@ -1,10 +1,13 @@
 .ui.menu {
     margin: 0;
-    background: transparent;
 }
 
 .ui a {
     color: #fff;
+}
+
+.ui.secondary.menu {
+    background: black;
 }
 
 
