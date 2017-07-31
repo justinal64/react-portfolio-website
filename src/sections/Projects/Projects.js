@@ -18,12 +18,95 @@ import TheBibleApp from "../../static/img/projects/TheBibleApp_Homescreen.png";
 const Projects = () => {
   return (
     <div>
-      <div className="projects blackbg">
-        <div className="header">
-          <h1>Front End Tech Stack</h1>
-          <div>JS, React, AngularJS, Bootstrap</div>
+      <div className="projects">
+        <div>
+          <div className="header">
+            <h1>Front End Tech Stack</h1>
+            <div>JS, React, AngularJS, Bootstrap</div>
+          </div>
+          <div>
+            <Grid columns={3} stackable>
+              <Grid.Row>
+                <Grid.Column>
+                  <Image src="https://www.wired.com/geekmom/wp-content/uploads/2012/03/marvel-characters.jpg" />
+                </Grid.Column>
+                <Grid.Column>
+                  <Image src="https://www.wired.com/geekmom/wp-content/uploads/2012/03/marvel-characters.jpg" />
+                </Grid.Column>
+                <Grid.Column>
+                  <Image src="https://www.wired.com/geekmom/wp-content/uploads/2012/03/marvel-characters.jpg" />
+                </Grid.Column>
+              </Grid.Row>
+
+              <Grid.Row>
+                <Grid.Column>
+                  <Image src="https://www.wired.com/geekmom/wp-content/uploads/2012/03/marvel-characters.jpg" />
+                </Grid.Column>
+                <Grid.Column>
+                  <Image src="https://www.wired.com/geekmom/wp-content/uploads/2012/03/marvel-characters.jpg" />
+                </Grid.Column>
+                <Grid.Column>
+                  <Image src="https://www.wired.com/geekmom/wp-content/uploads/2012/03/marvel-characters.jpg" />
+                </Grid.Column>
+              </Grid.Row>
+              <Grid.Row>
+                <Grid.Column>
+                  <Image src="https://www.wired.com/geekmom/wp-content/uploads/2012/03/marvel-characters.jpg" />
+                </Grid.Column>
+                <Grid.Column>
+                  <Image src="https://www.wired.com/geekmom/wp-content/uploads/2012/03/marvel-characters.jpg" />
+                </Grid.Column>
+                <Grid.Column>
+                  <Image src="https://www.wired.com/geekmom/wp-content/uploads/2012/03/marvel-characters.jpg" />
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+          </div>
         </div>
-        <div />
+        <div>
+          <div className="header">
+            <h1>Back End Tech Stack</h1>
+            <div>JS, React, AngularJS, Bootstrap</div>
+          </div>
+          <div>
+            <Grid columns={3} stackable>
+              <Grid.Row>
+                <Grid.Column>
+                  <Image src="https://www.wired.com/geekmom/wp-content/uploads/2012/03/marvel-characters.jpg" />
+                </Grid.Column>
+                <Grid.Column>
+                  <Image src="https://www.wired.com/geekmom/wp-content/uploads/2012/03/marvel-characters.jpg" />
+                </Grid.Column>
+                <Grid.Column>
+                  <Image src="https://www.wired.com/geekmom/wp-content/uploads/2012/03/marvel-characters.jpg" />
+                </Grid.Column>
+              </Grid.Row>
+
+              <Grid.Row>
+                <Grid.Column>
+                  <Image src="https://www.wired.com/geekmom/wp-content/uploads/2012/03/marvel-characters.jpg" />
+                </Grid.Column>
+                <Grid.Column>
+                  <Image src="https://www.wired.com/geekmom/wp-content/uploads/2012/03/marvel-characters.jpg" />
+                </Grid.Column>
+                <Grid.Column>
+                  <Image src="https://www.wired.com/geekmom/wp-content/uploads/2012/03/marvel-characters.jpg" />
+                </Grid.Column>
+              </Grid.Row>
+              <Grid.Row>
+                <Grid.Column>
+                  <Image src="https://www.wired.com/geekmom/wp-content/uploads/2012/03/marvel-characters.jpg" />
+                </Grid.Column>
+                <Grid.Column>
+                  <Image src="https://www.wired.com/geekmom/wp-content/uploads/2012/03/marvel-characters.jpg" />
+                </Grid.Column>
+                <Grid.Column>
+                  <Image src="https://www.wired.com/geekmom/wp-content/uploads/2012/03/marvel-characters.jpg" />
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+          </div>
+        </div>
       </div>
       {/* <Grid columns={3} stackable>
         <Grid.Row>
