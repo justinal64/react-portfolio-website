@@ -1,5 +1,4 @@
 .projects {
-    /* color: #fff; */
     text-align: center;
     margin: 0 auto;
     height: 95%;
@@ -11,11 +10,16 @@
     right: 0;
 }
 
-.opener {
+.blackbg {
+    background-color: black;
+}
+
+.header {
     width: 100%;
     height: 100%;
-    background: url('https://images7.alphacoders.com/532/532650.jpg');
-    object-fit: fill;
+    position: relative;
+    color: white;
+    top: 15%;
 }
 
 .image {

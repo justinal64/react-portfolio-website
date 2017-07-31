@@ -18,11 +18,13 @@ import TheBibleApp from "../../static/img/projects/TheBibleApp_Homescreen.png";
 const Projects = () => {
   return (
     <div>
-      <div className="projects">
-        <div className="opener" />
+      <div className="projects blackbg">
+        <div className="header">
+          <h1>Front End Tech Stack</h1>
+          <div>JS, React, AngularJS, Bootstrap</div>
+        </div>
+        <div />
       </div>
-      <Header>Front End Projects</Header>
-      <div>JS, React, AngularJS, Bootstrap</div>
       {/* <Grid columns={3} stackable>
         <Grid.Row>
           <Grid.Column>
