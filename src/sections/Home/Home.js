@@ -12,7 +12,7 @@ import {
   Segment,
   Visibility
 } from "semantic-ui-react";
-
+import PHS from "../../static/img/phs.png";
 const FixedMenu = () =>
   <Menu fixed="top" size="large">
     <Container>
@@ -65,25 +65,25 @@ export default class HomepageLayout extends Component {
             <Container text>
               <Header
                 as="h1"
-                content="Imagine-a-Company"
+                content="JL Designs"
                 inverted
                 style={{
                   fontSize: "4em",
                   fontWeight: "normal",
                   marginBottom: 0,
-                  marginTop: "3em"
+                  marginTop: "1em"
                 }}
               />
               <Header
                 as="h2"
-                content="Do whatever you want when you want to."
+                content="Making the Impossible Possible"
                 inverted
                 style={{ fontSize: "1.7em", fontWeight: "normal" }}
               />
-              <Button primary size="huge">
+              {/* <Button primary size="huge">
                 Get Started
                 <Icon name="right arrow" />
-              </Button>
+              </Button> */}
             </Container>
           </Segment>
         </Visibility>
@@ -93,35 +93,39 @@ export default class HomepageLayout extends Component {
             <Grid.Row>
               <Grid.Column width={8}>
                 <Header as="h3" style={{ fontSize: "2em" }}>
-                  We Help Companies and Companions
+                  Why Software Development?
                 </Header>
                 <p style={{ fontSize: "1.33em" }}>
-                  We can give your company superpowers to do things that they
-                  never thought possible. Let us delight your customers and
-                  empower your needs... through pure data analytics.
+                  In 2012 I working for Prime Health Services as a tech support
+                  specialist. I was in a room with 3 developers, and day after
+                  day I watched these developers creating something out of
+                  nothing, so I started researching software development and
+                  started creating "Hello World" apps. After 6 months of
+                  tinkering my boss gave me a very ambicious project "Can you
+                  create a dashboard that we will display incoming data?" Over
+                  the next 6 months I dove deeper into C#, asp.net, and
+                  javascript to create a dashboard application that would
+                  display data in realtime. We purchased a TV and every morning
+                  when I walked in the office I was proud to see what I created
+                  hanging on the wall for everyone to see!
                 </p>
-                <Header as="h3" style={{ fontSize: "2em" }}>
+                {/* <Header as="h3" style={{ fontSize: "2em" }}>
                   We Make Bananas That Can Dance
                 </Header>
                 <p style={{ fontSize: "1.33em" }}>
                   Yes that's right, you thought it was the stuff of dreams, but
                   even bananas can be bioengineered.
-                </p>
+                </p> */}
               </Grid.Column>
               <Grid.Column floated="right" width={6}>
-                <Image
-                  bordered
-                  rounded
-                  size="large"
-                  src="/assets/images/wireframe/white-image.png"
-                />
+                <Image bordered rounded size="large" src={PHS} />
               </Grid.Column>
             </Grid.Row>
-            <Grid.Row>
+            {/* <Grid.Row>
               <Grid.Column textAlign="center">
                 <Button size="huge">Check Them Out</Button>
               </Grid.Column>
-            </Grid.Row>
+            </Grid.Row> */}
           </Grid>
         </Segment>
 
