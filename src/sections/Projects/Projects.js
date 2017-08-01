@@ -11,6 +11,7 @@ import {
 } from "semantic-ui-react";
 import "./Projects.css";
 import TheBibleApp from "../../static/img/projects/TheBibleApp_Homescreen.png";
+
 // Websites to look at for tech stack
 // http://cihadturhan.com/
 // http://robin-noguier.com/
@@ -364,12 +365,6 @@ const Projects = () => {
                         this is the solution I came up with. I use simple
                         animations(using ng-animate) to hold the childs
                         attention while the verses are read to them. With the
-                        click of a button the user can also be rerouted to an
-                        adult version of the app that uses the Digital Bible
-                        Platform API to pull back the King James version of the
-                        bible. This project combines my knowledge of CSS, HTML,
-                        Javascript, Angular 1, Materialize, Digital Bible
-                        Platform API, and Firebase.
                       </Card.Description>
                     </Card.Content>
                     <Card.Content extra>

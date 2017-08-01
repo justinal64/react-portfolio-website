@@ -12,7 +12,7 @@ import NotFound from "./sections/NotFound/NotFound";
 render(
   <Router>
     <div>
-      <Navigation />
+      {/* <Navigation /> */}
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/contact" component={Contact} />
