@@ -12,6 +12,7 @@ import {
   Segment,
   Visibility
 } from "semantic-ui-react";
+import "./Home.css";
 import PHS from "../../static/img/phs.png";
 const FixedMenu = () =>
   <Menu fixed="top" size="large">
@@ -87,7 +88,7 @@ export default class HomepageLayout extends Component {
             </Container>
           </Segment>
         </Visibility>
-
+        {/* Why Software Development */}
         <Segment style={{ padding: "8em 0em" }} vertical>
           <Grid container stackable verticalAlign="middle">
             <Grid.Row>
@@ -96,9 +97,9 @@ export default class HomepageLayout extends Component {
                   Why Software Development?
                 </Header>
                 <p style={{ fontSize: "1.33em" }}>
-                  In 2012 I working for Prime Health Services as a tech support
-                  specialist. I was in a room with 3 developers, and day after
-                  day I watched these developers creating something out of
+                  In 2012 I was working for a healthcare company as a tech
+                  support specialist. I was in a room with developers, and day
+                  after day I watched these developers creating something out of
                   nothing, so I started researching software development and
                   started creating "Hello World" apps. After 6 months of
                   tinkering my boss gave me a very ambicious project "Can you
@@ -109,86 +110,227 @@ export default class HomepageLayout extends Component {
                   when I walked in the office I was proud to see what I created
                   hanging on the wall for everyone to see!
                 </p>
-                {/* <Header as="h3" style={{ fontSize: "2em" }}>
-                  We Make Bananas That Can Dance
-                </Header>
-                <p style={{ fontSize: "1.33em" }}>
-                  Yes that's right, you thought it was the stuff of dreams, but
-                  even bananas can be bioengineered.
-                </p> */}
               </Grid.Column>
               <Grid.Column floated="right" width={6}>
-                <Image bordered rounded size="large" src={PHS} />
-              </Grid.Column>
-            </Grid.Row>
-            {/* <Grid.Row>
-              <Grid.Column textAlign="center">
-                <Button size="huge">Check Them Out</Button>
-              </Grid.Column>
-            </Grid.Row> */}
-          </Grid>
-        </Segment>
-
-        <Segment style={{ padding: "0em" }} vertical>
-          <Grid celled="internally" columns="equal" stackable>
-            <Grid.Row textAlign="center">
-              <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
-                <Header as="h3" style={{ fontSize: "2em" }}>
-                  "What a Company"
-                </Header>
-                <p style={{ fontSize: "1.33em" }}>
-                  That is what they all say about us
-                </p>
-              </Grid.Column>
-              <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
-                <Header as="h3" style={{ fontSize: "2em" }}>
-                  "I shouldn't have gone with their competitor."
-                </Header>
-                <p style={{ fontSize: "1.33em" }}>
-                  <Image avatar src="/assets/images/avatar/large/nan.jpg" />
-                  <b>Nan</b> Chief Fun Officer Acme Toys
-                </p>
+                <Image bordered size="large" src={PHS} />
               </Grid.Column>
             </Grid.Row>
           </Grid>
         </Segment>
-
+        {/* Front End Projects*/}
         <Segment style={{ padding: "8em 0em" }} vertical>
-          <Container text>
-            <Header as="h3" style={{ fontSize: "2em" }}>
-              Breaking The Grid, Grabs Your Attention
-            </Header>
-            <p style={{ fontSize: "1.33em" }}>
-              Instead of focusing on content creation and hard work, we have
-              learned how to master the art of doing nothing by providing
-              massive amounts of whitespace and generic content that can seem
-              massive, monolithic and worth your attention.
-            </p>
-            <Button as="a" size="large">
-              Read More
-            </Button>
-
+          <Container>
             <Divider
-              as="h4"
+              as="h2"
               className="header"
               horizontal
               style={{ margin: "3em 0em", textTransform: "uppercase" }}
             >
-              <a href="#">Case Studies</a>
+              Front End Projects
             </Divider>
 
-            <Header as="h3" style={{ fontSize: "2em" }}>
-              Did We Tell You About Our Bananas?
-            </Header>
-            <p style={{ fontSize: "1.33em" }}>
-              Yes I know you probably disregarded the earlier boasts as
-              non-sequitur filler content, but its really true. It took years of
-              gene splicing and combinatory DNA research, but our bananas can
-              really dance.
-            </p>
-            <Button as="a" size="large">
-              I'm Still Quite Interested
-            </Button>
+            <Segment style={{ padding: "0em" }} vertical>
+              <Grid celled="internally" columns="equal" stackable>
+                <Grid.Row textAlign="center">
+                  <Grid.Column
+                    style={{ paddingBottom: "5em", paddingTop: "5em" }}
+                  >
+                    <Header as="h3" style={{ fontSize: "2em" }}>
+                      TheBibleApp
+                    </Header>
+                    <p style={{ fontSize: "1.33em" }}>
+                      I struggled to get my children to listen to the bible
+                      being read to them(4 children under the age of 3), and
+                      this is the solution I came up with. I use simple
+                      animations(using ng-animate) to hold the childs attention
+                      while the verses are read to them. With the click of a
+                      button the user can also be rerouted to an adult version
+                      of the app that uses the Digital Bible Platform API to
+                      pull back the King James version of the bible. This
+                      project combines my knowledge of CSS, HTML, Javascript,
+                      Angular 1, Materialize, Digital Bible Platform API, and
+                      Firebase.
+                    </p>
+                    <Button as="a" size="large">
+                      SourceCode
+                    </Button>
+                    <Button as="a" size="large">
+                      Visit Website
+                    </Button>
+                  </Grid.Column>
+                  <Grid.Column
+                    style={{ paddingBottom: "5em", paddingTop: "5em" }}
+                  >
+                    <Header as="h3" style={{ fontSize: "2em" }}>
+                      TheBibleApp
+                    </Header>
+                    <p style={{ fontSize: "1.33em" }}>
+                      I struggled to get my children to listen to the bible
+                      being read to them(4 children under the age of 3), and
+                      this is the solution I came up with. I use simple
+                      animations(using ng-animate) to hold the childs attention
+                      while the verses are read to them. With the click of a
+                      button the user can also be rerouted to an adult version
+                      of the app that uses the Digital Bible Platform API to
+                      pull back the King James version of the bible. This
+                      project combines my knowledge of CSS, HTML, Javascript,
+                      Angular 1, Materialize, Digital Bible Platform API, and
+                      Firebase.
+                    </p>
+                    <Button as="a" size="large">
+                      SourceCode
+                    </Button>
+                    <Button as="a" size="large">
+                      Visit Website
+                    </Button>
+                  </Grid.Column>
+                </Grid.Row>
+              </Grid>
+            </Segment>
+          </Container>
+        </Segment>
+        {/* Back End Projects */}
+        <Segment style={{ padding: "8em 0em" }} vertical>
+          <Container>
+            <Divider
+              as="h2"
+              className="header"
+              horizontal
+              style={{ margin: "3em 0em", textTransform: "uppercase" }}
+            >
+              Back End Projects
+            </Divider>
+
+            <Segment style={{ padding: "0em" }} vertical>
+              <Grid celled="internally" columns="equal" stackable>
+                <Grid.Row textAlign="center">
+                  <Grid.Column
+                    style={{ paddingBottom: "5em", paddingTop: "5em" }}
+                  >
+                    <Header as="h3" style={{ fontSize: "2em" }}>
+                      TheBibleApp
+                    </Header>
+                    <p style={{ fontSize: "1.33em" }}>
+                      I struggled to get my children to listen to the bible
+                      being read to them(4 children under the age of 3), and
+                      this is the solution I came up with. I use simple
+                      animations(using ng-animate) to hold the childs attention
+                      while the verses are read to them. With the click of a
+                      button the user can also be rerouted to an adult version
+                      of the app that uses the Digital Bible Platform API to
+                      pull back the King James version of the bible. This
+                      project combines my knowledge of CSS, HTML, Javascript,
+                      Angular 1, Materialize, Digital Bible Platform API, and
+                      Firebase.
+                    </p>
+                    <Button as="a" size="large">
+                      SourceCode
+                    </Button>
+                    <Button as="a" size="large">
+                      Visit Website
+                    </Button>
+                  </Grid.Column>
+                  <Grid.Column
+                    style={{ paddingBottom: "5em", paddingTop: "5em" }}
+                  >
+                    <Header as="h3" style={{ fontSize: "2em" }}>
+                      TheBibleApp
+                    </Header>
+                    <p style={{ fontSize: "1.33em" }}>
+                      I struggled to get my children to listen to the bible
+                      being read to them(4 children under the age of 3), and
+                      this is the solution I came up with. I use simple
+                      animations(using ng-animate) to hold the childs attention
+                      while the verses are read to them. With the click of a
+                      button the user can also be rerouted to an adult version
+                      of the app that uses the Digital Bible Platform API to
+                      pull back the King James version of the bible. This
+                      project combines my knowledge of CSS, HTML, Javascript,
+                      Angular 1, Materialize, Digital Bible Platform API, and
+                      Firebase.
+                    </p>
+                    <Button as="a" size="large">
+                      SourceCode
+                    </Button>
+                    <Button as="a" size="large">
+                      Visit Website
+                    </Button>
+                  </Grid.Column>
+                </Grid.Row>
+              </Grid>
+            </Segment>
+          </Container>
+        </Segment>
+        {/* Open Source Projects */}
+        <Segment style={{ padding: "8em 0em" }} vertical>
+          <Container>
+            <Divider
+              as="h2"
+              className="header"
+              horizontal
+              style={{ margin: "3em 0em", textTransform: "uppercase" }}
+            >
+              Open Source Projects
+            </Divider>
+
+            <Segment style={{ padding: "0em" }} vertical>
+              <Grid celled="internally" columns="equal" stackable>
+                <Grid.Row textAlign="center">
+                  <Grid.Column
+                    style={{ paddingBottom: "5em", paddingTop: "5em" }}
+                  >
+                    <Header as="h3" style={{ fontSize: "2em" }}>
+                      TheBibleApp
+                    </Header>
+                    <p style={{ fontSize: "1.33em" }}>
+                      I struggled to get my children to listen to the bible
+                      being read to them(4 children under the age of 3), and
+                      this is the solution I came up with. I use simple
+                      animations(using ng-animate) to hold the childs attention
+                      while the verses are read to them. With the click of a
+                      button the user can also be rerouted to an adult version
+                      of the app that uses the Digital Bible Platform API to
+                      pull back the King James version of the bible. This
+                      project combines my knowledge of CSS, HTML, Javascript,
+                      Angular 1, Materialize, Digital Bible Platform API, and
+                      Firebase.
+                    </p>
+                    <Button as="a" size="large">
+                      SourceCode
+                    </Button>
+                    <Button as="a" size="large">
+                      Visit Website
+                    </Button>
+                  </Grid.Column>
+                  <Grid.Column
+                    style={{ paddingBottom: "5em", paddingTop: "5em" }}
+                  >
+                    <Header as="h3" style={{ fontSize: "2em" }}>
+                      TheBibleApp
+                    </Header>
+                    <p style={{ fontSize: "1.33em" }}>
+                      I struggled to get my children to listen to the bible
+                      being read to them(4 children under the age of 3), and
+                      this is the solution I came up with. I use simple
+                      animations(using ng-animate) to hold the childs attention
+                      while the verses are read to them. With the click of a
+                      button the user can also be rerouted to an adult version
+                      of the app that uses the Digital Bible Platform API to
+                      pull back the King James version of the bible. This
+                      project combines my knowledge of CSS, HTML, Javascript,
+                      Angular 1, Materialize, Digital Bible Platform API, and
+                      Firebase.
+                    </p>
+                    <Button as="a" size="large">
+                      SourceCode
+                    </Button>
+                    <Button as="a" size="large">
+                      Visit Website
+                    </Button>
+                  </Grid.Column>
+                </Grid.Row>
+              </Grid>
+            </Segment>
           </Container>
         </Segment>
 
