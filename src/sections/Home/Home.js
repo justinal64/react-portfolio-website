@@ -118,24 +118,25 @@ export default class HomepageLayout extends Component {
           </Grid>
         </Segment>
         {/* Front End Projects*/}
-        <Segment style={{ padding: "8em 0em" }} vertical>
+        <Segment inverted style={{ padding: "8em 0em" }} vertical>
           <Container>
             <Divider
               as="h2"
               className="header"
               horizontal
+              inverted
               style={{ margin: "3em 0em", textTransform: "uppercase" }}
             >
               Front End Projects
             </Divider>
 
-            <Segment style={{ padding: "0em" }} vertical>
+            <Segment inverted style={{ padding: "0em" }} vertical>
               <Grid celled="internally" columns="equal" stackable>
                 <Grid.Row textAlign="center">
                   <Grid.Column
                     style={{ paddingBottom: "5em", paddingTop: "5em" }}
                   >
-                    <Header as="h3" style={{ fontSize: "2em" }}>
+                    <Header inverted as="h3" style={{ fontSize: "2em" }}>
                       TheBibleApp
                     </Header>
                     <p style={{ fontSize: "1.33em" }}>
@@ -161,7 +162,7 @@ export default class HomepageLayout extends Component {
                   <Grid.Column
                     style={{ paddingBottom: "5em", paddingTop: "5em" }}
                   >
-                    <Header as="h3" style={{ fontSize: "2em" }}>
+                    <Header inverted as="h3" style={{ fontSize: "2em" }}>
                       TheBibleApp
                     </Header>
                     <p style={{ fontSize: "1.33em" }}>
@@ -262,24 +263,25 @@ export default class HomepageLayout extends Component {
           </Container>
         </Segment>
         {/* Open Source Projects */}
-        <Segment style={{ padding: "8em 0em" }} vertical>
+        <Segment inverted style={{ padding: "8em 0em" }} vertical>
           <Container>
             <Divider
               as="h2"
               className="header"
               horizontal
+              inverted
               style={{ margin: "3em 0em", textTransform: "uppercase" }}
             >
               Open Source Projects
             </Divider>
 
-            <Segment style={{ padding: "0em" }} vertical>
+            <Segment inverted style={{ padding: "0em" }} vertical>
               <Grid celled="internally" columns="equal" stackable>
                 <Grid.Row textAlign="center">
                   <Grid.Column
                     style={{ paddingBottom: "5em", paddingTop: "5em" }}
                   >
-                    <Header as="h3" style={{ fontSize: "2em" }}>
+                    <Header inverted as="h3" style={{ fontSize: "2em" }}>
                       TheBibleApp
                     </Header>
                     <p style={{ fontSize: "1.33em" }}>
@@ -305,7 +307,7 @@ export default class HomepageLayout extends Component {
                   <Grid.Column
                     style={{ paddingBottom: "5em", paddingTop: "5em" }}
                   >
-                    <Header as="h3" style={{ fontSize: "2em" }}>
+                    <Header inverted as="h3" style={{ fontSize: "2em" }}>
                       TheBibleApp
                     </Header>
                     <p style={{ fontSize: "1.33em" }}>
