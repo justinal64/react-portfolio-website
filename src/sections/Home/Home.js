@@ -14,6 +14,7 @@ import {
 } from "semantic-ui-react";
 import "./Home.css";
 import PHS from "../../static/img/phs.png";
+import TBA from "../../static/img/tba.png";
 const FixedMenu = () =>
   <Menu fixed="top" size="large">
     <Container>
@@ -76,10 +77,18 @@ export default class HomepageLayout extends Component {
                 }}
               />
               <Header
+                className="fadein"
                 as="h2"
-                content="Making the Impossible Possible"
+                content="Making the Impossible..."
                 inverted
                 style={{ fontSize: "1.7em", fontWeight: "normal" }}
+              />
+              <Header
+                className="fadeinLast"
+                as="h1"
+                content="Possible"
+                inverted
+                style={{ fontSize: "3.5em", fontWeight: "normal" }}
               />
               {/* <Button primary size="huge">
                 Get Started
@@ -118,7 +127,11 @@ export default class HomepageLayout extends Component {
           </Grid>
         </Segment>
         {/* Front End Projects*/}
-        <Segment inverted style={{ padding: "8em 0em" }} vertical>
+        <Segment
+          inverted
+          style={{ padding: "8em 0em", textAlign: "center" }}
+          vertical
+        >
           <Container>
             <Divider
               as="h2"
@@ -139,6 +152,13 @@ export default class HomepageLayout extends Component {
                     <Header inverted as="h3" style={{ fontSize: "2em" }}>
                       TheBibleApp
                     </Header>
+                    <Image
+                      href="http://justinleggett.me/projects/thebibleapp/index.html#/"
+                      centered
+                      size="large"
+                      className="imageStyling"
+                      src={TBA}
+                    />
                     <p style={{ fontSize: "1.33em" }}>
                       I struggled to get my children to listen to the bible
                       being read to them(4 children under the age of 3), and
