@@ -161,12 +161,25 @@ export default class HomepageLayout extends Component {
                       Angular 1, Materialize, Digital Bible Platform API, and
                       Firebase.
                     </p>
-                    <Button as="a" size="large">
-                      SourceCode
-                    </Button>
-                    <Button as="a" size="large">
-                      Visit Website
-                    </Button>
+                    <Button.Group size="huge">
+                      <Button
+                        as="a"
+                        icon="home"
+                        content="Visit Website"
+                        positive
+                        href="http://justinleggett.me/projects/thebibleapp/index.html#/"
+                        size="huge"
+                      />
+                      <Button.Or />
+                      <Button
+                        as="a"
+                        icon="github"
+                        content="Source Code"
+                        primary
+                        href="https://github.com/justinal64/TheBibleApp"
+                        size="huge"
+                      />
+                    </Button.Group>
                   </Grid.Column>
                   <Grid.Column
                     style={{ paddingBottom: "5em", paddingTop: "5em" }}
@@ -187,12 +200,25 @@ export default class HomepageLayout extends Component {
                       my portfolio website using ReactJS and Semantic Ui for
                       styling.
                     </p>
-                    <Button as="a" size="large">
-                      SourceCode
-                    </Button>
-                    <Button as="a" size="large">
-                      Visit Website
-                    </Button>
+                    <Button.Group size="huge">
+                      <Button
+                        as="a"
+                        icon="home"
+                        content="Visit Website"
+                        positive
+                        href="http://justinleggett.me/projects/thebibleapp/index.html#/"
+                        size="huge"
+                      />
+                      <Button.Or />
+                      <Button
+                        as="a"
+                        icon="github"
+                        content="Source Code"
+                        primary
+                        href="https://github.com/justinal64/TheBibleApp"
+                        size="huge"
+                      />
+                    </Button.Group>
                   </Grid.Column>
                 </Grid.Row>
               </Grid>
