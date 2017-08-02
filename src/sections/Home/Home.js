@@ -206,7 +206,7 @@ export default class HomepageLayout extends Component {
                         icon="home"
                         content="Visit Website"
                         positive
-                        href="http://justinleggett.me/projects/thebibleapp/index.html#/"
+                        href="http://justinleggett.me"
                         size="huge"
                       />
                       <Button.Or />
@@ -215,7 +215,7 @@ export default class HomepageLayout extends Component {
                         icon="github"
                         content="Source Code"
                         primary
-                        href="https://github.com/justinal64/TheBibleApp"
+                        href="https://github.com/justinal64/react-portfolio-website"
                         size="huge"
                       />
                     </Button.Group>
