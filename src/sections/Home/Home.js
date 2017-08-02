@@ -12,9 +12,11 @@ import {
   Segment,
   Visibility
 } from "semantic-ui-react";
+import Typist from "react-typist";
 import "./Home.css";
 import PHS from "../../static/img/phs.png";
 import TBA from "../../static/img/tba.png";
+import PWS from "../../static/img/pws.png";
 const FixedMenu = () =>
   <Menu fixed="top" size="large">
     <Container>
@@ -76,24 +78,11 @@ export default class HomepageLayout extends Component {
                   marginTop: "1em"
                 }}
               />
-              <Header
-                className="fadein"
-                as="h2"
-                content="Making the Impossible..."
-                inverted
-                style={{ fontSize: "1.7em", fontWeight: "normal" }}
-              />
-              <Header
-                className="fadeinLast"
-                as="h1"
-                content="Possible"
-                inverted
-                style={{ fontSize: "3.5em", fontWeight: "normal" }}
-              />
-              {/* <Button primary size="huge">
-                Get Started
-                <Icon name="right arrow" />
-              </Button> */}
+              <Typist>
+                <span className="typist">
+                  Making the Impossible...<br />Possible...
+                </span>
+              </Typist>
             </Container>
           </Segment>
         </Visibility>
@@ -183,20 +172,20 @@ export default class HomepageLayout extends Component {
                     style={{ paddingBottom: "5em", paddingTop: "5em" }}
                   >
                     <Header inverted as="h3" style={{ fontSize: "2em" }}>
-                      TheBibleApp
+                      Portfolio Website
                     </Header>
+                    <Image
+                      href="http://justinleggett.me"
+                      centered
+                      size="large"
+                      className="imageStyling"
+                      src={PWS}
+                    />
                     <p style={{ fontSize: "1.33em" }}>
-                      I struggled to get my children to listen to the bible
-                      being read to them(4 children under the age of 3), and
-                      this is the solution I came up with. I use simple
-                      animations(using ng-animate) to hold the childs attention
-                      while the verses are read to them. With the click of a
-                      button the user can also be rerouted to an adult version
-                      of the app that uses the Digital Bible Platform API to
-                      pull back the King James version of the bible. This
-                      project combines my knowledge of CSS, HTML, Javascript,
-                      Angular 1, Materialize, Digital Bible Platform API, and
-                      Firebase.
+                      I started learning ReactJS about 6 montsh ago and I
+                      absolutely love the core concepts of react, so I recreated
+                      my portfolio website using ReactJS and Semantic Ui for
+                      styling.
                     </p>
                     <Button as="a" size="large">
                       SourceCode
