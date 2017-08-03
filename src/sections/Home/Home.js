@@ -17,6 +17,7 @@ import "./Home.css";
 import PHS from "../../static/img/phs.png";
 import TBA from "../../static/img/tba.png";
 import PWS from "../../static/img/pws.png";
+import TSA from "../../static/img/tsa.png";
 const FixedMenu = () =>
   <Menu fixed="top" size="large">
     <Container>
@@ -216,6 +217,57 @@ export default class HomepageLayout extends Component {
                         content="Source Code"
                         primary
                         href="https://github.com/justinal64/react-portfolio-website"
+                        size="huge"
+                      />
+                    </Button.Group>
+                  </Grid.Column>
+                </Grid.Row>
+              </Grid>
+            </Segment>
+            <Segment inverted style={{ padding: "0em" }} vertical>
+              <Grid celled="internally" columns="equal" stackable>
+                <Grid.Row textAlign="center">
+                  <Grid.Column
+                    style={{ paddingBottom: "5em", paddingTop: "5em" }}
+                  >
+                    <Header inverted as="h3" style={{ fontSize: "2em" }}>
+                      TheSocialApp
+                    </Header>
+                    <Image
+                      href="http://justinleggett.me/projects/thebibleapp/index.html#/"
+                      centered
+                      size="large"
+                      className="imageStyling"
+                      src={TSA}
+                    />
+
+                    <p style={{ fontSize: "1.33em" }}>
+                      TheSocialApp is an IOS/Android application written in
+                      React Native with a ASP.NET core RESTful API connected to
+                      a MongoDB for storing and retrieving data. ReactJS and
+                      React Native wasn’t something that I was taught at NSS,
+                      instead I wanted to push myself to learn something new for
+                      my final project. This application is essentially a clone
+                      of Facebook. It was a central area where you can view
+                      posts from users in your social network. It has a tab for
+                      adding friends and a tab for editing your profile.
+                    </p>
+                    <Button.Group size="huge">
+                      <Button
+                        as="a"
+                        icon="home"
+                        content="Visit Website"
+                        positive
+                        href="http://justinleggett.me/projects/thebibleapp/index.html#/"
+                        size="huge"
+                      />
+                      <Button.Or />
+                      <Button
+                        as="a"
+                        icon="github"
+                        content="Source Code"
+                        primary
+                        href="https://github.com/justinal64/TheBibleApp"
                         size="huge"
                       />
                     </Button.Group>
