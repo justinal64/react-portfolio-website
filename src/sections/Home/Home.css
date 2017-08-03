@@ -21,7 +21,7 @@
 
 /* min-height needs to be changed back to auto on smaller screens */
 
-.column p {
+.height {
     min-height: 15em;
 }
 

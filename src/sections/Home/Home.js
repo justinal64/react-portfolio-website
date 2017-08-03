@@ -17,6 +17,7 @@ import "./Home.css";
 import PHS from "../../static/img/phs.png";
 import TBA from "../../static/img/tba.png";
 import PWS from "../../static/img/pws.png";
+import TSA from "../../static/img/tsa.png";
 const FixedMenu = () =>
   <Menu fixed="top" size="large">
     <Container>
@@ -148,7 +149,7 @@ export default class HomepageLayout extends Component {
                       className="imageStyling"
                       src={TBA}
                     />
-                    <p style={{ fontSize: "1.33em" }}>
+                    <p style={{ fontSize: "1.33em" }} className="height">
                       I struggled to get my children to listen to the bible
                       being read to them(4 children under the age of 3), and
                       this is the solution I came up with. I use simple
@@ -194,8 +195,8 @@ export default class HomepageLayout extends Component {
                       className="imageStyling"
                       src={PWS}
                     />
-                    <p style={{ fontSize: "1.33em" }}>
-                      I started learning ReactJS about 6 montsh ago and I
+                    <p style={{ fontSize: "1.33em" }} className="height">
+                      I started learning ReactJS about 6 months ago and I
                       absolutely love the core concepts of react, so I recreated
                       my portfolio website using ReactJS and Semantic Ui for
                       styling.
@@ -223,6 +224,58 @@ export default class HomepageLayout extends Component {
                 </Grid.Row>
               </Grid>
             </Segment>
+            <Segment inverted style={{ padding: "0em" }} vertical>
+              <Grid celled="internally" columns="equal" stackable>
+                <Grid.Row textAlign="center">
+                  <Grid.Column
+                    style={{ paddingBottom: "5em", paddingTop: "5em" }}
+                  >
+                    <Header inverted as="h3" style={{ fontSize: "2em" }}>
+                      TheSocialApp
+                    </Header>
+                    <Image
+                      href="http://justinleggett.me/projects/thebibleapp/index.html#/"
+                      centered
+                      size="large"
+                      className="imageStyling"
+                      src={TSA}
+                    />
+
+                    <p style={{ fontSize: "1.33em" }}>
+                      TheSocialApp is an IOS/Android application written in
+                      React Native with a ASP.NET core RESTful API connected to
+                      a MongoDB for storing and retrieving data. ReactJS and
+                      React Native wasn’t something that I was taught at NSS,
+                      instead I wanted to push myself to learn something new for
+                      my final project. This application is essentially a clone
+                      of Facebook. It was a central area where you can view
+                      posts from users in your social network. It has a tab for
+                      adding friends and a tab for editing your profile.
+                    </p>
+                    <Button
+                      as="a"
+                      icon="github"
+                      content="Source Code"
+                      primary
+                      href="https://github.com/justinal64/thesocialappfinal"
+                      size="huge"
+                    />
+                    <Divider
+                      as="h2"
+                      className="header"
+                      horizontal
+                      inverted
+                      style={{
+                        margin: "3em 0em",
+                        textTransform: "uppercase"
+                      }}
+                    >
+                      Coming Soon to Android and IOS
+                    </Divider>
+                  </Grid.Column>
+                </Grid.Row>
+              </Grid>
+            </Segment>
           </Container>
         </Segment>
         {/* Back End Projects */}
@@ -244,53 +297,56 @@ export default class HomepageLayout extends Component {
                     style={{ paddingBottom: "5em", paddingTop: "5em" }}
                   >
                     <Header as="h3" style={{ fontSize: "2em" }}>
-                      TheBibleApp
+                      TheSocialApp Backend Restful Api
                     </Header>
-                    <p style={{ fontSize: "1.33em" }}>
-                      I struggled to get my children to listen to the bible
-                      being read to them(4 children under the age of 3), and
-                      this is the solution I came up with. I use simple
-                      animations(using ng-animate) to hold the childs attention
-                      while the verses are read to them. With the click of a
-                      button the user can also be rerouted to an adult version
-                      of the app that uses the Digital Bible Platform API to
-                      pull back the King James version of the bible. This
-                      project combines my knowledge of CSS, HTML, Javascript,
-                      Angular 1, Materialize, Digital Bible Platform API, and
-                      Firebase.
+                    <p style={{ fontSize: "1.33em" }} className="height">
+                      This is the Restful api for TheSocialApp, the react native
+                      app I created for my final capstone. For the backend
+                      project I decided to use ASP.NET Core, and MongoDb neither
+                      of these were taught at NSS, but NSS taught me how to
+                      learn, so I applied these skills to learn these
+                      technologies. The backend allows the user to Post, Get,
+                      Put, and Delete data from the MongoDb, as well as only
+                      allowing the user to pull data that it attached to a
+                      unique ID that is assigned to each user when their account
+                      was created.
                     </p>
-                    <Button as="a" size="large">
-                      SourceCode
-                    </Button>
-                    <Button as="a" size="large">
-                      Visit Website
-                    </Button>
+                    <Button.Group size="huge">
+                      <Button
+                        as="a"
+                        icon="github"
+                        content="Source Code"
+                        primary
+                        href="https://github.com/justinal64/thesocialappv3"
+                        size="huge"
+                      />
+                    </Button.Group>
                   </Grid.Column>
                   <Grid.Column
                     style={{ paddingBottom: "5em", paddingTop: "5em" }}
                   >
                     <Header as="h3" style={{ fontSize: "2em" }}>
-                      TheBibleApp
+                      Bangazon-Inc
                     </Header>
-                    <p style={{ fontSize: "1.33em" }}>
-                      I struggled to get my children to listen to the bible
-                      being read to them(4 children under the age of 3), and
-                      this is the solution I came up with. I use simple
-                      animations(using ng-animate) to hold the childs attention
-                      while the verses are read to them. With the click of a
-                      button the user can also be rerouted to an adult version
-                      of the app that uses the Digital Bible Platform API to
-                      pull back the King James version of the bible. This
-                      project combines my knowledge of CSS, HTML, Javascript,
-                      Angular 1, Materialize, Digital Bible Platform API, and
-                      Firebase.
+                    <p style={{ fontSize: "1.33em" }} className="height">
+                      Bangazon-Inc is an application that was created in an
+                      agile team environment. This project was divided up
+                      between myself and four other teammates and we used C#
+                      ADO.NET, MVC, dapper, with a SQL backend. This application
+                      is an amazon clone, consisting of a section to create a
+                      new user, add items to your cart, checkout, and purchase
+                      an item.
                     </p>
-                    <Button as="a" size="large">
-                      SourceCode
-                    </Button>
-                    <Button as="a" size="large">
-                      Visit Website
-                    </Button>
+                    <Button.Group size="huge">
+                      <Button
+                        as="a"
+                        icon="github"
+                        content="Source Code"
+                        primary
+                        href="https://github.com/Team-Slytherin/Bangazon-Terminal-Interface"
+                        size="huge"
+                      />
+                    </Button.Group>
                   </Grid.Column>
                 </Grid.Row>
               </Grid>
@@ -298,78 +354,6 @@ export default class HomepageLayout extends Component {
           </Container>
         </Segment>
         {/* Open Source Projects */}
-        <Segment inverted style={{ padding: "8em 0em" }} vertical>
-          <Container>
-            <Divider
-              as="h2"
-              className="header"
-              horizontal
-              inverted
-              style={{ margin: "3em 0em", textTransform: "uppercase" }}
-            >
-              Open Source Projects
-            </Divider>
-
-            <Segment inverted style={{ padding: "0em" }} vertical>
-              <Grid celled="internally" columns="equal" stackable>
-                <Grid.Row textAlign="center">
-                  <Grid.Column
-                    style={{ paddingBottom: "5em", paddingTop: "5em" }}
-                  >
-                    <Header inverted as="h3" style={{ fontSize: "2em" }}>
-                      TheBibleApp
-                    </Header>
-                    <p style={{ fontSize: "1.33em" }}>
-                      I struggled to get my children to listen to the bible
-                      being read to them(4 children under the age of 3), and
-                      this is the solution I came up with. I use simple
-                      animations(using ng-animate) to hold the childs attention
-                      while the verses are read to them. With the click of a
-                      button the user can also be rerouted to an adult version
-                      of the app that uses the Digital Bible Platform API to
-                      pull back the King James version of the bible. This
-                      project combines my knowledge of CSS, HTML, Javascript,
-                      Angular 1, Materialize, Digital Bible Platform API, and
-                      Firebase.
-                    </p>
-                    <Button as="a" size="large">
-                      SourceCode
-                    </Button>
-                    <Button as="a" size="large">
-                      Visit Website
-                    </Button>
-                  </Grid.Column>
-                  <Grid.Column
-                    style={{ paddingBottom: "5em", paddingTop: "5em" }}
-                  >
-                    <Header inverted as="h3" style={{ fontSize: "2em" }}>
-                      TheBibleApp
-                    </Header>
-                    <p style={{ fontSize: "1.33em" }}>
-                      I struggled to get my children to listen to the bible
-                      being read to them(4 children under the age of 3), and
-                      this is the solution I came up with. I use simple
-                      animations(using ng-animate) to hold the childs attention
-                      while the verses are read to them. With the click of a
-                      button the user can also be rerouted to an adult version
-                      of the app that uses the Digital Bible Platform API to
-                      pull back the King James version of the bible. This
-                      project combines my knowledge of CSS, HTML, Javascript,
-                      Angular 1, Materialize, Digital Bible Platform API, and
-                      Firebase.
-                    </p>
-                    <Button as="a" size="large">
-                      SourceCode
-                    </Button>
-                    <Button as="a" size="large">
-                      Visit Website
-                    </Button>
-                  </Grid.Column>
-                </Grid.Row>
-              </Grid>
-            </Segment>
-          </Container>
-        </Segment>
 
         <Segment inverted vertical style={{ padding: "5em 0em" }}>
           <Container>
