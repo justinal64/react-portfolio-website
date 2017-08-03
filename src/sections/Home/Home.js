@@ -196,7 +196,7 @@ export default class HomepageLayout extends Component {
                       src={PWS}
                     />
                     <p style={{ fontSize: "1.33em" }}>
-                      I started learning ReactJS about 6 montsh ago and I
+                      I started learning ReactJS about 6 months ago and I
                       absolutely love the core concepts of react, so I recreated
                       my portfolio website using ReactJS and Semantic Ui for
                       styling.
@@ -252,25 +252,26 @@ export default class HomepageLayout extends Component {
                       posts from users in your social network. It has a tab for
                       adding friends and a tab for editing your profile.
                     </p>
-                    <Button.Group size="huge">
-                      <Button
-                        as="a"
-                        icon="home"
-                        content="Visit Website"
-                        positive
-                        href="http://justinleggett.me/projects/thebibleapp/index.html#/"
-                        size="huge"
-                      />
-                      <Button.Or />
-                      <Button
-                        as="a"
-                        icon="github"
-                        content="Source Code"
-                        primary
-                        href="https://github.com/justinal64/TheBibleApp"
-                        size="huge"
-                      />
-                    </Button.Group>
+                    <Button
+                      as="a"
+                      icon="github"
+                      content="Source Code"
+                      primary
+                      href="https://github.com/justinal64/thesocialappfinal"
+                      size="huge"
+                    />
+                    <Divider
+                      as="h2"
+                      className="header"
+                      horizontal
+                      inverted
+                      style={{
+                        margin: "3em 0em",
+                        textTransform: "uppercase"
+                      }}
+                    >
+                      Coming Soon to Android and IOS
+                    </Divider>
                   </Grid.Column>
                 </Grid.Row>
               </Grid>
@@ -296,53 +297,56 @@ export default class HomepageLayout extends Component {
                     style={{ paddingBottom: "5em", paddingTop: "5em" }}
                   >
                     <Header as="h3" style={{ fontSize: "2em" }}>
-                      TheBibleApp
+                      TheSocialApp Backend Restful Api
                     </Header>
                     <p style={{ fontSize: "1.33em" }}>
-                      I struggled to get my children to listen to the bible
-                      being read to them(4 children under the age of 3), and
-                      this is the solution I came up with. I use simple
-                      animations(using ng-animate) to hold the childs attention
-                      while the verses are read to them. With the click of a
-                      button the user can also be rerouted to an adult version
-                      of the app that uses the Digital Bible Platform API to
-                      pull back the King James version of the bible. This
-                      project combines my knowledge of CSS, HTML, Javascript,
-                      Angular 1, Materialize, Digital Bible Platform API, and
-                      Firebase.
+                      This is the Restful api for TheSocialApp, the react native
+                      app I created for my final capstone. For the backend
+                      project I decided to use ASP.NET Core, and MongoDb neither
+                      of these were taught at NSS, but NSS taught me how to
+                      learn, so I applied these skills to learn these
+                      technologies. The backend allows the user to Post, Get,
+                      Put, and Delete data from the MongoDb, as well as only
+                      allowing the user to pull data that it attached to a
+                      unique ID that is assigned to each user when their account
+                      was created.
                     </p>
-                    <Button as="a" size="large">
-                      SourceCode
-                    </Button>
-                    <Button as="a" size="large">
-                      Visit Website
-                    </Button>
+                    <Button.Group size="huge">
+                      <Button
+                        as="a"
+                        icon="github"
+                        content="Source Code"
+                        primary
+                        href="https://github.com/justinal64/thesocialappv3"
+                        size="huge"
+                      />
+                    </Button.Group>
                   </Grid.Column>
                   <Grid.Column
                     style={{ paddingBottom: "5em", paddingTop: "5em" }}
                   >
                     <Header as="h3" style={{ fontSize: "2em" }}>
-                      TheBibleApp
+                      Bangazon-Inc
                     </Header>
                     <p style={{ fontSize: "1.33em" }}>
-                      I struggled to get my children to listen to the bible
-                      being read to them(4 children under the age of 3), and
-                      this is the solution I came up with. I use simple
-                      animations(using ng-animate) to hold the childs attention
-                      while the verses are read to them. With the click of a
-                      button the user can also be rerouted to an adult version
-                      of the app that uses the Digital Bible Platform API to
-                      pull back the King James version of the bible. This
-                      project combines my knowledge of CSS, HTML, Javascript,
-                      Angular 1, Materialize, Digital Bible Platform API, and
-                      Firebase.
+                      Bangazon-Inc is an application that was created in an
+                      agile team environment. This project was divided up
+                      between myself and four other teammates and we used C#
+                      ADO.NET, MVC, dapper, with a SQL backend. This application
+                      is an amazon clone, consisting of a section to create a
+                      new user, add items to your cart, checkout, and purchase
+                      an item.
                     </p>
-                    <Button as="a" size="large">
-                      SourceCode
-                    </Button>
-                    <Button as="a" size="large">
-                      Visit Website
-                    </Button>
+                    <Button.Group size="huge">
+                      <Button
+                        as="a"
+                        icon="github"
+                        content="Source Code"
+                        primary
+                        href="https://github.com/Team-Slytherin/Bangazon-Terminal-Interface"
+                        size="huge"
+                      />
+                    </Button.Group>
                   </Grid.Column>
                 </Grid.Row>
               </Grid>
@@ -359,7 +363,7 @@ export default class HomepageLayout extends Component {
               inverted
               style={{ margin: "3em 0em", textTransform: "uppercase" }}
             >
-              Open Source Projects
+              Open Source Contributions
             </Divider>
 
             <Segment inverted style={{ padding: "0em" }} vertical>
