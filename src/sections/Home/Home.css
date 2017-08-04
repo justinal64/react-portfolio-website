@@ -2,6 +2,13 @@
     max-width: 1200px;
 }
 
+.bg {
+    background: #0f2634 url("../../static/img/marvel-logo-test3.png") no-repeat;
+    background-size: cover;
+    color: rgba(255, 255, 255, .9);
+    /* width: 100%; */
+}
+
 
 /* Image border */
 
