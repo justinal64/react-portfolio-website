@@ -18,6 +18,7 @@ import PHS from "../../static/img/phs.png";
 import TBA from "../../static/img/tba.png";
 import PWS from "../../static/img/pws.png";
 import TSA from "../../static/img/tsa.png";
+import Test from "../../static/img/marvel-logo-test.png";
 const FixedMenu = () =>
   <Menu fixed="top" size="large">
     <Container>
@@ -49,11 +50,9 @@ export default class HomepageLayout extends Component {
           onBottomVisible={this.hideFixedMenu}
           once={false}
         >
-          <Segment
-            inverted
-            textAlign="center"
-            style={{ minHeight: 700, padding: "1em 0em" }}
-            vertical
+          <div
+            className="bg"
+            style={{ minHeight: 700, padding: "1em 0em", textAlign: "center" }}
           >
             <Container>
               <Menu inverted pointing secondary size="large">
@@ -85,7 +84,7 @@ export default class HomepageLayout extends Component {
                 </span>
               </Typist>
             </Container>
-          </Segment>
+          </div>
         </Visibility>
         {/* Why Software Development */}
         <Segment style={{ padding: "8em 0em" }} vertical>
@@ -197,9 +196,8 @@ export default class HomepageLayout extends Component {
                     />
                     <p style={{ fontSize: "1.33em" }} className="height">
                       I started learning ReactJS about 6 months ago and I
-                      absolutely love the core concepts of react, so I recreated
-                      my portfolio website using ReactJS and Semantic Ui for
-                      styling.
+                      absolutely love the ideas, so I recreated my portfolio
+                      website using ReactJS and Semantic Ui for styling.
                     </p>
                     <Button.Group size="huge">
                       <Button
@@ -297,7 +295,7 @@ export default class HomepageLayout extends Component {
                     style={{ paddingBottom: "5em", paddingTop: "5em" }}
                   >
                     <Header as="h3" style={{ fontSize: "2em" }}>
-                      TheSocialApp Backend Restful Api
+                      TheSocialApp Restful Api
                     </Header>
                     <p style={{ fontSize: "1.33em" }} className="height">
                       This is the Restful api for TheSocialApp, the react native
@@ -331,7 +329,7 @@ export default class HomepageLayout extends Component {
                     <p style={{ fontSize: "1.33em" }} className="height">
                       Bangazon-Inc is an application that was created in an
                       agile team environment. This project was divided up
-                      between myself and four other teammates and we used C#
+                      between myself and four other teammates and we used C#,
                       ADO.NET, MVC, dapper, with a SQL backend. This application
                       is an amazon clone, consisting of a section to create a
                       new user, add items to your cart, checkout, and purchase
