@@ -24,33 +24,6 @@ import TSA from "../../static/img/tsa.png";
 const Projects = () => {
   return (
     <div>
-      <Segment style={{ padding: "8em 0em" }} vertical>
-        <Grid container stackable verticalAlign="middle">
-          <Grid.Row>
-            <Grid.Column width={8}>
-              <Header as="h3" style={{ fontSize: "2em" }}>
-                Why Software Development?
-              </Header>
-              <p style={{ fontSize: "1.33em" }}>
-                In 2012 I was working for a healthcare company as a tech support
-                specialist. I was in a room with developers, and day after day I
-                watched these developers creating something out of nothing, so I
-                started researching software development and started creating
-                "Hello World" apps. After 6 months of tinkering my boss gave me
-                a very ambicious project "Can you create a dashboard that we
-                will display incoming data?" Over the next 6 months I dove
-                deeper into C#, asp.net, and javascript to create a dashboard
-                application that would display data in realtime. We purchased a
-                TV and every morning when I walked in the office I was proud to
-                see what I created hanging on the wall for everyone to see!
-              </p>
-            </Grid.Column>
-            <Grid.Column floated="right" width={6}>
-              <Image bordered size="large" src={PHS} />
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-      </Segment>
       <Segment
         style={{ padding: "8em 0em", textAlign: "center" }}
         vertical
@@ -213,6 +186,78 @@ const Projects = () => {
             </Segment>
           </Container>
         </div>
+      </Segment>
+      <Segment style={{ padding: "8em 0em" }} vertical>
+        <Container>
+          <Divider
+            as="h2"
+            className="header"
+            horizontal
+            style={{ margin: "3em 0em", textTransform: "uppercase" }}
+          >
+            Back End Projects
+          </Divider>
+
+          <Segment style={{ padding: "0em" }} vertical>
+            <Grid celled="internally" columns="equal" stackable>
+              <Grid.Row textAlign="center">
+                <Grid.Column
+                  style={{ paddingBottom: "5em", paddingTop: "5em" }}
+                >
+                  <Header as="h3" style={{ fontSize: "2em" }}>
+                    TheSocialApp Restful Api
+                  </Header>
+                  <p style={{ fontSize: "1.33em" }} className="height">
+                    This is the Restful api for TheSocialApp, the react native
+                    app I created for my final capstone. For the backend project
+                    I decided to use ASP.NET Core, and MongoDb neither of these
+                    were taught at NSS, but NSS taught me how to learn, so I
+                    applied these skills to learn these technologies. The
+                    backend allows the user to Post, Get, Put, and Delete data
+                    from the MongoDb, as well as only allowing the user to pull
+                    data that it attached to a unique ID that is assigned to
+                    each user when their account was created.
+                  </p>
+                  <Button.Group size="huge">
+                    <Button
+                      as="a"
+                      icon="github"
+                      content="Source Code"
+                      primary
+                      href="https://github.com/justinal64/thesocialappv3"
+                      size="huge"
+                    />
+                  </Button.Group>
+                </Grid.Column>
+                <Grid.Column
+                  style={{ paddingBottom: "5em", paddingTop: "5em" }}
+                >
+                  <Header as="h3" style={{ fontSize: "2em" }}>
+                    Bangazon-Inc
+                  </Header>
+                  <p style={{ fontSize: "1.33em" }} className="height">
+                    Bangazon-Inc is an application that was created in an agile
+                    team environment. This project was divided up between myself
+                    and four other teammates and we used C#, ADO.NET, MVC,
+                    dapper, with a SQL backend. This application is an amazon
+                    clone, consisting of a section to create a new user, add
+                    items to your cart, checkout, and purchase an item.
+                  </p>
+                  <Button.Group size="huge">
+                    <Button
+                      as="a"
+                      icon="github"
+                      content="Source Code"
+                      primary
+                      href="https://github.com/Team-Slytherin/Bangazon-Terminal-Interface"
+                      size="huge"
+                    />
+                  </Button.Group>
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+          </Segment>
+        </Container>
       </Segment>
     </div>
   );
