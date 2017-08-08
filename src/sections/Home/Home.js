@@ -18,7 +18,6 @@ import PHS from "../../static/img/phs.png";
 import TBA from "../../static/img/tba.png";
 import PWS from "../../static/img/pws.png";
 import TSA from "../../static/img/tsa.png";
-import Test from "../../static/img/marvel-logo-test.png";
 const FixedMenu = () =>
   <Menu fixed="top" size="large">
     <Container>
