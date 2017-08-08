@@ -116,9 +116,12 @@ export default class HomepageLayout extends Component {
           </Grid>
         </Segment>
         {/* Front End Projects*/}
-        <Segment style={{ padding: "8em 0em", textAlign: "center" }} vertical>
+        <Segment
+          style={{ padding: "8em 0em", textAlign: "center" }}
+          vertical
+          inverted
+        >
           <div
-            className="bg"
             style={{ minHeight: 700, padding: "1em 0em", textAlign: "center" }}
           >
             <Container>
