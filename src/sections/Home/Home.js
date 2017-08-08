@@ -88,6 +88,7 @@ export default class HomepageLayout extends Component {
         </Visibility>
         <Intro />
         {/* Why Software Development */}
+
         <Projects />
         {/* Front End Projects */}
         {/* Back End Projects */}

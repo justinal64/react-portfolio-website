@@ -18,7 +18,7 @@ import PHS from "../../static/img/phs.png";
 // http://cihadturhan.com/
 // http://robin-noguier.com/
 // http://www.guillaumejuvenet.com/
-const Projects = () => {
+const Intro = () => {
   return (
     <Segment style={{ padding: "8em 0em" }} vertical>
       <Grid container stackable verticalAlign="middle">
@@ -50,4 +50,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Intro;
