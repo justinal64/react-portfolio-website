@@ -3,10 +3,14 @@
 }
 
 .bg {
-    background: #0f2634 url("../../static/img/marvel-logo-test3.png") no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
     color: rgba(255, 255, 255, .9);
-    /* width: 100%; */
+    max-width: 100%;
+    background: url("../../static/img/marvel-logo-test3.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
