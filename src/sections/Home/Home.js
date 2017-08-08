@@ -51,7 +51,7 @@ export default class HomepageLayout extends Component {
           once={false}
         >
           <div
-            className="bg"
+            className="bgpm"
             style={{ minHeight: 700, padding: "1em 0em", textAlign: "center" }}
           >
             <Container>
@@ -116,12 +116,11 @@ export default class HomepageLayout extends Component {
           </Grid>
         </Segment>
         {/* Front End Projects*/}
-        <Segment
-          inverted
-          style={{ padding: "8em 0em", textAlign: "center" }}
-          vertical
-        >
-          <div>
+        <Segment style={{ padding: "8em 0em", textAlign: "center" }} vertical>
+          <div
+            className="bg"
+            style={{ minHeight: 700, padding: "1em 0em", textAlign: "center" }}
+          >
             <Container>
               <Divider
                 as="h2"
