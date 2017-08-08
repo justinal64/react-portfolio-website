@@ -89,10 +89,11 @@ export default class HomepageLayout extends Component {
         <Intro />
         {/* Why Software Development */}
         <Projects />
+        {/* Front End Projects */}
         {/* Back End Projects */}
 
-        {/* Contact */}
         <Contact />
+        {/* Contact */}
 
         <Segment inverted vertical style={{ padding: "5em 0em" }}>
           <Container>
