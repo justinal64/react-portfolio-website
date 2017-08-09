@@ -4,7 +4,7 @@ import scrollToComponent from "react-scroll-to-component";
 
 class App extends React.Component {
   componentDidMount() {
-    scrollToComponent(this.Blue, {
+    scrollToComponent(this.Violet, {
       offset: 0,
       align: "middle",
       duration: 500,

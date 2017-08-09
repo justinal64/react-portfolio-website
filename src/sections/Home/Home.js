@@ -20,102 +20,70 @@ import Contact from "../Contact/Contact";
 import Projects from "../Projects/Projects";
 import Intro from "../Intro/Intro";
 
-const FixedMenu = () =>
-  <Menu fixed="top" size="large">
-    <Container>
-      <Menu.Menu position="right">
-        <Menu.Item as="a" active>
-          Home
-        </Menu.Item>
-        <Menu.Item
-          as="a"
-          onClick={() =>
-            scrollToComponent(this.Violet, {
-              offset: 0,
-              align: "top",
-              duration: 1500
-            })}
-        >
-          Projects
-        </Menu.Item>
-        <Menu.Item as="a">Contact</Menu.Item>
-      </Menu.Menu>
-    </Container>
-  </Menu>;
-
 export default class HomepageLayout extends Component {
   state = {};
 
-  hideFixedMenu = () => this.setState({ visible: false });
-  showFixedMenu = () => this.setState({ visible: true });
+  // hideFixedMenu = () => this.setState({ visible: false });
+  // showFixedMenu = () => this.setState({ visible: true });
 
   render() {
-    const { visible } = this.state;
+    // const { visible } = this.state;
 
     return (
       <div>
-        {visible ? <FixedMenu /> : null}
+        {/* {visible ? <FixedMenu /> : null} */}
 
-        <Visibility
+        {/* <Visibility
           onBottomPassed={this.showFixedMenu}
           onBottomVisible={this.hideFixedMenu}
           once={false}
+        > */}
+        <div
+          className="bgpm"
+          style={{ minHeight: 700, padding: "1em 0em", textAlign: "center" }}
         >
-          <div
-            className="bgpm"
-            style={{ minHeight: 700, padding: "1em 0em", textAlign: "center" }}
-          >
-            <Container>
-              <Menu inverted pointing secondary size="large">
-                <Menu.Item position="right">
-                  <Menu.Item as="a" active>
-                    Home
-                  </Menu.Item>
-                  <Menu.Item
-                    as="a"
-                    onClick={() =>
-                      scrollToComponent(this.Violet, {
-                        offset: 0,
-                        align: "top",
-                        duration: 1500
-                      })}
-                  >
-                    Projects
-                  </Menu.Item>
-                  <Menu.Item as="a">Contact</Menu.Item>
+          <Container>
+            <Menu inverted fixed="top" pointing secondary size="large">
+              <Menu.Item position="right">
+                <Menu.Item as="a">Home</Menu.Item>
+                <Menu.Item
+                  as="a"
+                  onClick={() =>
+                    scrollToComponent(this.Violet, {
+                      offset: 0,
+                      align: "top",
+                      duration: 1500
+                    })}
+                >
+                  Projects
                 </Menu.Item>
-              </Menu>
-            </Container>
+                <Menu.Item as="a">Contact</Menu.Item>
+              </Menu.Item>
+            </Menu>
+          </Container>
 
-            <Container text>
-              <Header
-                as="h1"
-                content="JL Designs"
-                inverted
-                style={{
-                  fontSize: "4em",
-                  fontWeight: "normal",
-                  marginBottom: 0,
-                  marginTop: "1em"
-                }}
-              />
-              <Typist>
-                <span className="typist">
-                  Making the Impossible...<br />Possible...
-                </span>
-              </Typist>
-            </Container>
-          </div>
-        </Visibility>
+          <Container text>
+            <Header
+              as="h1"
+              content="JL Designs"
+              inverted
+              style={{
+                fontSize: "4em",
+                fontWeight: "normal",
+                marginBottom: 0,
+                marginTop: "1em"
+              }}
+            />
+            <Typist>
+              <span className="typist">
+                Making the Impossible...<br />Possible...
+              </span>
+            </Typist>
+          </Container>
+        </div>
+        {/* </Visibility> */}
         <Intro />
         {/* Why Software Development */}
-
-        <Projects />
-        {/* Front End Projects */}
-        {/* Back End Projects */}
-
-        <Contact />
-        {/* Contact */}
         <section
           className="violet"
           ref={section => {
@@ -124,6 +92,12 @@ export default class HomepageLayout extends Component {
         >
           Violet
         </section>
+        <Projects />
+        {/* Front End Projects */}
+        {/* Back End Projects */}
+
+        <Contact />
+        {/* Contact */}
         <Segment inverted vertical style={{ padding: "5em 0em" }}>
           <Container>
             <Grid divided inverted stackable>
