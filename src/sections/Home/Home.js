@@ -13,6 +13,7 @@ import {
   Visibility
 } from "semantic-ui-react";
 import Typist from "react-typist";
+import scrollToComponent from "react-scroll-to-component";
 import "./Home.css";
 
 import Contact from "../Contact/Contact";
@@ -26,7 +27,17 @@ const FixedMenu = () =>
         <Menu.Item as="a" active>
           Home
         </Menu.Item>
-        <Menu.Item as="a">Projects</Menu.Item>
+        <Menu.Item
+          as="a"
+          onClick={() =>
+            scrollToComponent(this.Violet, {
+              offset: 0,
+              align: "top",
+              duration: 1500
+            })}
+        >
+          Projects
+        </Menu.Item>
         <Menu.Item as="a">Contact</Menu.Item>
       </Menu.Menu>
     </Container>
@@ -60,7 +71,17 @@ export default class HomepageLayout extends Component {
                   <Menu.Item as="a" active>
                     Home
                   </Menu.Item>
-                  <Menu.Item as="a">Projects</Menu.Item>
+                  <Menu.Item
+                    as="a"
+                    onClick={() =>
+                      scrollToComponent(this.Violet, {
+                        offset: 0,
+                        align: "top",
+                        duration: 1500
+                      })}
+                  >
+                    Projects
+                  </Menu.Item>
                   <Menu.Item as="a">Contact</Menu.Item>
                 </Menu.Item>
               </Menu>
@@ -95,7 +116,14 @@ export default class HomepageLayout extends Component {
 
         <Contact />
         {/* Contact */}
-
+        <section
+          className="violet"
+          ref={section => {
+            this.Violet = section;
+          }}
+        >
+          Violet
+        </section>
         <Segment inverted vertical style={{ padding: "5em 0em" }}>
           <Container>
             <Grid divided inverted stackable>
