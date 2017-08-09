@@ -7,6 +7,7 @@ import Navigation from "./components/Navigation/navigation";
 import Contact from "./sections/Contact/Contact";
 import Projects from "./sections/Projects/Projects";
 import Home from "./sections/Home/Home";
+import ScrollTest from "./sections/ScrollTest/ScrollTest";
 import NotFound from "./sections/NotFound/NotFound";
 
 render(
@@ -17,6 +18,7 @@ render(
         <Route exact path="/" component={Home} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/projects" component={Projects} />
+        <Route exact path="/scroll" component={ScrollTest} />
         <Route path="*" component={NotFound} />
       </Switch>
     </div>
