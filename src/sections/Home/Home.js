@@ -19,7 +19,7 @@ import "./Home.css";
 import Contact from "../Contact/Contact";
 import Projects from "../Projects/Projects";
 import Intro from "../Intro/Intro";
-
+import TechStack from "../TechStack/TechStack";
 export default class HomepageLayout extends Component {
   state = {};
 
@@ -120,6 +120,7 @@ export default class HomepageLayout extends Component {
           }}
         >
           <Projects />
+          <TechStack />
         </wrapper>
         {/* Front End Projects */}
         {/* Back End Projects */}
