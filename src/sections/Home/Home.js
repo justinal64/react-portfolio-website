@@ -45,11 +45,32 @@ export default class HomepageLayout extends Component {
           <Container>
             <Menu inverted fixed="top" pointing secondary size="large">
               <Menu.Item position="right">
-                <Menu.Item as="a">Home</Menu.Item>
                 <Menu.Item
                   as="a"
                   onClick={() =>
-                    scrollToComponent(this.Violet, {
+                    scrollToComponent(this.HomeSection, {
+                      offset: 0,
+                      align: "top",
+                      duration: 1500
+                    })}
+                >
+                  Home
+                </Menu.Item>
+                <Menu.Item
+                  as="a"
+                  onClick={() =>
+                    scrollToComponent(this.IntroSection, {
+                      offset: 0,
+                      align: "top",
+                      duration: 1500
+                    })}
+                >
+                  Intro
+                </Menu.Item>
+                <Menu.Item
+                  as="a"
+                  onClick={() =>
+                    scrollToComponent(this.ProjectsSection, {
                       offset: 0,
                       align: "top",
                       duration: 1500
@@ -57,46 +78,79 @@ export default class HomepageLayout extends Component {
                 >
                   Projects
                 </Menu.Item>
-                <Menu.Item as="a">Contact</Menu.Item>
+                <Menu.Item
+                  as="a"
+                  onClick={() =>
+                    scrollToComponent(this.ContactSection, {
+                      offset: 0,
+                      align: "top",
+                      duration: 1500
+                    })}
+                >
+                  Contact
+                </Menu.Item>
               </Menu.Item>
             </Menu>
           </Container>
 
-          <Container text>
-            <Header
-              as="h1"
-              content="JL Designs"
-              inverted
-              style={{
-                fontSize: "4em",
-                fontWeight: "normal",
-                marginBottom: 0,
-                marginTop: "1em"
-              }}
-            />
-            <Typist>
-              <span className="typist">
-                Making the Impossible...<br />Possible...
-              </span>
-            </Typist>
-          </Container>
+          <wrapper
+            ref={wrapper => {
+              this.HomeSection = wrapper;
+            }}
+          >
+            <Container text>
+              <Header
+                as="h1"
+                content="JL Designs"
+                inverted
+                style={{
+                  fontSize: "4em",
+                  fontWeight: "normal",
+                  marginBottom: 0,
+                  marginTop: "1em"
+                }}
+              />
+              <Typist>
+                <span className="typist">
+                  Making the Impossible...<br />Possible...
+                </span>
+              </Typist>
+            </Container>
+          </wrapper>
         </div>
         {/* </Visibility> */}
-        <Intro />
+        <wrapper
+          ref={wrapper => {
+            this.IntroSection = wrapper;
+          }}
+        >
+          <Intro />
+        </wrapper>
         {/* Why Software Development */}
-        <section
+        {/* <section
           className="violet"
           ref={section => {
             this.Violet = section;
           }}
         >
           Violet
-        </section>
-        <Projects />
+        </section> */}
+        <wrapper
+          ref={wrapper => {
+            this.ProjectsSection = wrapper;
+          }}
+        >
+          <Projects />
+        </wrapper>
         {/* Front End Projects */}
         {/* Back End Projects */}
-
-        <Contact />
+        <wrapper
+          ref={wrapper => {
+            this.ContactSection = wrapper;
+          }}
+        >
+          <Contact />
+        </wrapper>
         {/* Contact */}
         <Segment inverted vertical style={{ padding: "5em 0em" }}>
           <Container>
