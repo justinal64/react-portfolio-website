@@ -149,7 +149,7 @@ const Projects = () => {
                       src={TSA}
                     />
 
-                    <p style={{ fontSize: "1.33em" }}>
+                    <p style={{ fontSize: "1.33em" }} className="padding">
                       TheSocialApp is an IOS/Android application written in
                       React Native with a ASP.NET core RESTful API connected to
                       a MongoDB for storing and retrieving data. ReactJS and
