@@ -4,11 +4,11 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <Segment style={{ padding: "8em 0em" }} vertical inverted>
+    <Segment style={{ padding: "8em 0em" }} vertical>
       <Grid container stackable verticalAlign="middle">
         <Grid.Row>
           <Grid.Column width={8}>
-            <Header inverted as="h3" style={{ fontSize: "2em" }}>
+            <Header as="h3" style={{ fontSize: "2em" }}>
               Like what you see? Let's talk
             </Header>
             <p style={{ fontSize: "1.33em" }}>
