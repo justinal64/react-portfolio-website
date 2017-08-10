@@ -7,6 +7,14 @@
     /* opacity: .7; */
 }
 
+.ui.secondary.inverted.menu a.item {
+    color: white !important;
+}
+
+.ui.secondary.inverted.menu a.item:hover {
+    color: #b8b8b8 !important;
+}
+
 .bgpm {
     /* background-size: cover; */
     color: rgba(255, 255, 255, .9);

@@ -23,21 +23,9 @@ import Intro from "../Intro/Intro";
 export default class HomepageLayout extends Component {
   state = {};
 
-  // hideFixedMenu = () => this.setState({ visible: false });
-  // showFixedMenu = () => this.setState({ visible: true });
-
   render() {
-    // const { visible } = this.state;
-
     return (
       <div>
-        {/* {visible ? <FixedMenu /> : null} */}
-
-        {/* <Visibility
-          onBottomPassed={this.showFixedMenu}
-          onBottomVisible={this.hideFixedMenu}
-          once={false}
-        > */}
         <div
           className="bgpm"
           style={{ minHeight: 700, padding: "1em 0em", textAlign: "center" }}
@@ -118,7 +106,7 @@ export default class HomepageLayout extends Component {
             </Container>
           </wrapper>
         </div>
-        {/* </Visibility> */}
+        {/* Why Software Development */}
         <wrapper
           ref={wrapper => {
             this.IntroSection = wrapper;
@@ -126,15 +114,6 @@ export default class HomepageLayout extends Component {
         >
           <Intro />
         </wrapper>
-        {/* Why Software Development */}
-        {/* <section
-          className="violet"
-          ref={section => {
-            this.Violet = section;
-          }}
-        >
-          Violet
-        </section> */}
         <wrapper
           ref={wrapper => {
             this.ProjectsSection = wrapper;
