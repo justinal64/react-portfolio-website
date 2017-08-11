@@ -1,36 +1,74 @@
 import React from "react";
-import { Button, Icon, Segment, Header, Grid } from "semantic-ui-react";
+import {
+  Button,
+  Container,
+  Divider,
+  Grid,
+  Header,
+  Icon,
+  Image,
+  List,
+  Menu,
+  Segment,
+  Visibility
+} from "semantic-ui-react";
 import "./Contact.css";
 
 const Contact = () => {
   return (
-    <Segment style={{ padding: "8em 0em" }} vertical>
-      <Grid container stackable verticalAlign="middle">
-        <Grid.Row>
-          <Grid.Column width={8}>
-            <Header as="h3" style={{ fontSize: "2em" }}>
-              Like what you see? Let's talk
-            </Header>
-            <p style={{ fontSize: "1.33em" }}>
-              In 2012 I was working for a healthcare company as a tech support
-              specialist. I was in a room with developers, and day after day I
-              watched these developers creating something out of nothing, so I
-              started researching software development and started creating
-              "Hello World" apps. After 6 months of tinkering my boss gave me a
-              very ambicious project "Can you create a dashboard that we will
-              display incoming data?" Over the next 6 months I dove deeper into
-              C#, asp.net, and javascript to create a dashboard application that
-              would display data in realtime. We purchased a TV and every
-              morning when I walked in the office I was proud to see what I
-              created hanging on the wall for everyone to see!
-            </p>
-          </Grid.Column>
-          <Grid.Column floated="right" width={6}>
-            {/* <Image bordered size="large" src={PHS} /> */}
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-    </Segment>
+    <div>
+      <Segment style={{ padding: "8em 0em", textAlign: "center" }} vertical>
+        <Container>
+          <Divider
+            as="h2"
+            className="header"
+            horizontal
+            style={{ margin: "3em 0em", textTransform: "uppercase" }}
+          >
+            Contact
+          </Divider>
+          <Grid container stackable centered verticalAlign="middle">
+            <Grid.Row>
+              <Grid.Column width={12}>
+                <p style={{ fontSize: "1.33em" }}>
+                  Thanks you for visiting my website. I am always looking to
+                  expand my skills set. If you feel like I might be a good fit
+                  for your organization please feel free to reach out to me
+                  using any other the links below. Thank you for taking the time
+                  to stop by and I look forward to hearing from you.
+                </p>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+          <div className="footer-social-icons">
+            <h4 className="_14" />
+            <ul className="social-icons">
+              <li>
+                <a
+                  href="https://www.fb.me/justin.leggett.12"
+                  className="social-icon"
+                >
+                  {" "}<i className="fa fa-facebook fa-5x" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/justinleggett/"
+                  className="social-icon"
+                >
+                  {" "}<i className="fa fa-linkedin fa-5x" />
+                </a>
+              </li>
+              <li>
+                <a href="mailto:justinal8183@gmail.com" className="social-icon">
+                  {" "}<i className="fa fa-envelope fa-5x" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </Container>
+      </Segment>
+    </div>
   );
 };
 

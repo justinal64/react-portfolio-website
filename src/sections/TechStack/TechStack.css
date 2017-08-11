@@ -33,25 +33,6 @@
     opacity: 1;
 }
 
-.button {
-    position: absolute;
-    width: 500px;
-    left: 0;
-    top: 180px;
-    text-align: center;
-    opacity: 0;
-    transition: opacity .35s ease;
-}
-
-.button a {
-    width: 200px;
-    padding: 12px 48px;
-    text-align: center;
-    color: white;
-    border: solid 2px white;
-    z-index: 1;
-}
-
 .overlayEffect:hover .button {
     opacity: 1;
 }
