@@ -142,7 +142,7 @@ const Projects = () => {
                       TheSocialApp
                     </Header>
                     <Image
-                      href="http://justinleggett.me/projects/thebibleapp/index.html#/"
+                      href="https://github.com/justinal64/thesocialappfinal"
                       centered
                       size="large"
                       className="imageStyling"
@@ -169,7 +169,7 @@ const Projects = () => {
                       size="huge"
                     />
                     <Divider
-                      as="h2"
+                      as="h3"
                       className="header"
                       horizontal
                       inverted

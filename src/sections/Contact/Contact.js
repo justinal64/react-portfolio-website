@@ -31,11 +31,11 @@ const Contact = () => {
             <Grid.Row>
               <Grid.Column width={12}>
                 <p style={{ fontSize: "1.33em" }}>
-                  Thanks you for visiting my website. I am always looking to
-                  expand my skills set. If you feel like I might be a good fit
+                  Thank you for visiting my website. I am always looking to
+                  expand my skill set. If you feel like I might be a good fit
                   for your organization please feel free to reach out to me
-                  using any other the links below. Thank you for taking the time
-                  to stop by and I look forward to hearing from you.
+                  using the links below. Thank you for taking the time to stop
+                  by and I look forward to hearing from you.
                 </p>
               </Grid.Column>
             </Grid.Row>
