@@ -32,12 +32,16 @@ in the terminal to run the application locally
 Home Page
 ![Home Page](./src/static/img/projects/homepage.png)
 <br />
+Intro
 ![Intro](./src/static/img/projects/intro.png)
 <br />
+Front End Projects
 ![Front End Projects](./src/static/img/projects/frontend_projects.png)
 <br />
+Back End Projects
 ![Back End Projects](./src/static/img/projects/backend_projects.png)
 <br />
+Tech Stack
 ![Tech Stack](./src/static/img/projects/tech_stack.png)
 <br />
 
