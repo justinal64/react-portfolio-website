@@ -1,4 +1,4 @@
-# TheSocialApp Frontend React Native App
+# Portfolio Website
 
 For the last 6 months I have been on a journey to learn React. I have create a mobile application using React-Native, but this is the first full app I have created using React. I recreated my portfolio website using React and Semantic UI for styling. I hope you like what you see.
 
