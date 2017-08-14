@@ -22,7 +22,7 @@ npm install
 to install all the project dependencies.
 <br />
 
-![Home Page](./src/img/projects/homepage.png)
+![Home Page](./src/static/img/projects/homepage.png)
 <br />
 <!-- Click "Sign Up" and create a new user. Once you have done that you will automatically be logged into the app. 
 <br />
