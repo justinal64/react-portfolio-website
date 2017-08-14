@@ -1,6 +1,6 @@
 # TheSocialApp Frontend React Native App
 
-For the last 6 months I have been on a journey to learn React. I have create a mobile application using React-Native, but this is the first full app I have created using React. I recreated my portfolio website using React and Semantic UI for styling. 
+For the last 6 months I have been on a journey to learn React. I have create a mobile application using React-Native, but this is the first full app I have created using React. I recreated my portfolio website using React and Semantic UI for styling. I hope you like what you see.
 
 
 ## Getting Started
@@ -32,21 +32,15 @@ in the terminal to run the application locally
 Home Page
 ![Home Page](./src/static/img/projects/homepage.png)
 <br />
-<!-- Click "Sign Up" and create a new user. Once you have done that you will automatically be logged into the app. 
+![Intro](./src/static/img/projects/intro.png)
 <br />
-![Community Activity](./app/images/screenshots/communityactivity.png)
+![Front End Projects](./src/static/img/projects/frontend_projects.png)
 <br />
-The next tab is where you would add friends. 
+![Back End Projects](./src/static/img/projects/backend_projects.png)
 <br />
-![Users](./app/images/screenshots/users.png)
+![Tech Stack](./src/static/img/projects/tech_stack.png)
 <br />
-The next is where you would keep and delete notes. 
-<br />
-![Notes](./app/images/screenshots/notes.png)
-<br />
-and finally the profile page is where you can edit your personal information and delete posts you have created. 
-<br />
-![Profile](./app/images/screenshots/profile.png) -->
+
 
 ## Built With
 
