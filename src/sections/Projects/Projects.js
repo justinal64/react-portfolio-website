@@ -17,6 +17,8 @@ import PHS from "../../static/img/phs.png";
 import TBA from "../../static/img/tba.png";
 import PWS from "../../static/img/pws.png";
 import TSA from "../../static/img/tsa.png";
+import NASA from "../../static/img/projects/nasa_hp.png";
+
 // Websites to look at for tech stack
 // http://cihadturhan.com/
 // http://robin-noguier.com/
@@ -168,18 +170,57 @@ const Projects = () => {
                       href="https://github.com/justinal64/thesocialappfinal"
                       size="huge"
                     />
-                    <Divider
-                      as="h3"
-                      className="header"
-                      horizontal
-                      inverted
-                      style={{
-                        margin: "3em 0em",
-                        textTransform: "uppercase"
-                      }}
-                    >
-                      Coming Soon to Android and IOS
-                    </Divider>
+                  </Grid.Column>
+                </Grid.Row>
+              </Grid>
+            </Segment>
+            <Segment inverted style={{ padding: "0em" }} vertical>
+              <Grid celled="internally" columns="equal" stackable>
+                <Grid.Row textAlign="center">
+                  <Grid.Column
+                    style={{ paddingBottom: "5em", paddingTop: "5em" }}
+                  >
+                    <Header inverted as="h3" style={{ fontSize: "2em" }}>
+                      Relaxation using Redux
+                    </Header>
+                    <Image
+                      href="http://justinleggett.me/projects/nasa/"
+                      centered
+                      size="large"
+                      className="imageStyling"
+                      src={NASA}
+                    />
+
+                    <p style={{ fontSize: "1.33em" }} className="padding">
+                      Since I was young I have always been fasinated with space.
+                      When I'm looking at an image of space I feel like I am
+                      sitting in an art gallary looking at a nice piece of art.
+                      I decided to make a website that would display images of
+                      space and that would update every few minutes. I used
+                      ReactJS, Redux and the NASA API to create this website.
+                      The image updates every 2 minutes and if you would like to
+                      learn more about the image scroll down for additional
+                      information.
+                    </p>
+                    <Button.Group size="huge">
+                      <Button
+                        as="a"
+                        icon="home"
+                        content="Visit Website"
+                        positive
+                        href="http://justinleggett.me/projects/nasa/"
+                        size="huge"
+                      />
+                      <Button.Or />
+                      <Button
+                        as="a"
+                        icon="github"
+                        content="Source Code"
+                        primary
+                        href="https://github.com/justinal64/nasa-react-redux"
+                        size="huge"
+                      />
+                    </Button.Group>
                   </Grid.Column>
                 </Grid.Row>
               </Grid>
